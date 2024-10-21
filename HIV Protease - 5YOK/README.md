@@ -27,4 +27,19 @@ VMD was used for visualizing the MD trajectory and generating movies and images.
 Analysis included RMSD, bond analysis, and temperature monitoring.
 
 Results
-RMSD Backbone Analysis
+
+1.RMSD Backbone Analysis
+<div align="center">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/rmsdvsframe.jpeg" alt="HIV Protease Simulation GIF" width="600px">
+</div>
+2. Bond vs Time Analysis
+<div align="center">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/bondvsts.jpeg" alt="HIV Protease Simulation GIF" width="600px">
+</div>
+3. Temperature and Energy Monitoring (TEM & TEMABG vs TS)
+div align="center">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/tempvsts.jpeg" width="600px">
+</div>
+
+
+
