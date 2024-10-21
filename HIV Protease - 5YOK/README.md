@@ -55,7 +55,7 @@ This graph shows the evolution of critical **bonds** over time steps (**TS**), r
 
 ---
 
-### **3. Temperature and Energy Monitoring (TEM & TEMABG vs TS)**
+### **3. Temperature and Energy Monitoring (TEM & TEMAVG vs TS)**
 The following plot shows **temperature** and **energy** trends during the simulation. Stable temperature and energy profiles indicate a well-equilibrated system:
 
 <div align="left">
