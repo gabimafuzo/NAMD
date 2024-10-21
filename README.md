@@ -37,9 +37,10 @@ This repository contains various molecular dynamics (MD) simulations of **biolog
 ---
 
 ## **Results**:
-The results of this project will be documented in individual simulations and analyses, showcasing insights into the structural dynamics of biological molecules.
----
+- The results of this project will be documented in individual simulations and analyses, showcasing insights into the structural dynamics of biological molecules.
 
+
+---
 
 ## **Contributing**:
 Contributions to this project are welcome! If you have suggestions or are interested in collaborating, please contact me via email at **gabrielacmafuzo@gmail.com**.
