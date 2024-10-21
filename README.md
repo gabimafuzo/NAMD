@@ -4,8 +4,7 @@
   <img src="https://github.com/gabimafuzo/NAMD/blob/eef890ad992f9ba255e50af4400bad1947774a50/HIV%20Protease%20-%205YOK/proteinacomp.gif" alt="Molecular Dynamics Simulation GIF" width="600px">
 </div>
 
-This repository contains various molecular dynamics (MD) simulations of **biological molecules** using **NAMD** and **VMD**. The aim of this project is to study the structural dynamics and interactions of biological macromolecules in different environments.
-
+In this repository, you will find molecular dynamics (MD) simulations conducted during the current PIBIC UFPR 2024 grant period. The objective of this project is to investigate the structure and interactions of these biological macromolecules with the environment over time.
 ---
 
 ## **Key Components**:
