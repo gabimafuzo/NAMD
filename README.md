@@ -13,7 +13,7 @@ This repository contains various molecular dynamics (MD) simulations of **biolog
   
 - **Visualization**: Using VMD to analyze and visualize simulation trajectories and molecular structures.
 
-- **Analysis Tools**: Implementing tools to assess stability, interactions, and other critical parameters of biological molecules.
+- **Analysis Tools**: Implementing tools to assess stability, interactions, and other critical parameters.
 
 ---
 
