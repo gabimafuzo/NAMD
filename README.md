@@ -43,6 +43,6 @@ This repository contains various molecular dynamics (MD) simulations of **biolog
 ---
 
 ## **Contributing**:
-Contributions to this project are welcome! If you have suggestions or are interested in collaborating, please contact me via email at **gabrielacmafuzo@gmail.com**.
+Contributions to this project are welcome! If you have suggestions or are interested in collaborating, please contact me via email at [gabrielacmafuzo@gmail.com](mailto:gabrielacmafuzo@gmail.com).
 
 ---
