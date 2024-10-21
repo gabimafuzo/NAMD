@@ -26,7 +26,6 @@ This repository contains the molecular dynamics (MD) simulation of the **HIV-1 p
 
 ### **Simulation**:
 - **Equilibration** and **production phases** were run in **NAMD**.
-- A **2-step equilibration** was performed to relax the system.
 - The **production run** followed, gathering data for analysis.
 
 ### **Visualization**:
