@@ -1,0 +1,2021 @@
+Charm++> No provisioning arguments specified. Running with a single PE.
+         Use +auto-provision to fully subscribe resources or +p1 to silence this message.
+Charm++: standalone mode (not using charmrun)
+Charm++> Running in Multicore mode: 1 threads (PEs)
+Charm++> Using recursive bisection (scheme 3) for topology aware partitions
+Converse/Charm++ Commit ID: 
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 hosts (1 sockets x 6 cores x 2 PUs = 12-way SMP)
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Info: Built with CUDA version 11080
+Did not find +devices i,j,k,... argument, using all
+Pe 0 physical rank 0 binding to CUDA device 0 on fedora: 'NVIDIA GeForce GTX 1650'  Mem: 3715MB  Rev: 7.5  PCI: 0:1:0
+CharmLB> Load balancing instrumentation for communication is off.
+Info: NAMD 3.0 for Linux-x86_64-multicore-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Chem. Phys. 153:044130 (2020) doi:10.1063/5.0014475
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 80000 for multicore-linux-x86_64-gcc
+Info: Built Sun Jun 16 07:02:32 CDT 2024 by dhardy on athine.ks.uiuc.edu
+Info: 1 NAMD  3.0  Linux-x86_64-multicore-CUDA  1    fedora  gabrielamafuzo
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.32262 s
+CkLoopLib is used in SMP with simple dynamic scheduling (converse-level notification)
+Info: 0 MB of memory in use based on /proc/self/stat
+Info: Configuration file is step7_production.inp
+Info: Working in the current directory /home/gabrielamafuzo/namd/charmm-gui-memb1/charmm-gui-2960298025/namd
+TCL: Suspending until startup complete.
+Warning: Option "1-4scaling" has been deprecated. Instead use "oneFourScaling".
+Info: EXTENDED SYSTEM FILE   step6.6_equilibration.xsc
+Warning: The Langevin gamma parameters differ over the particles,
+Warning: requiring extra work per step to constrain rigid bonds.
+Info: Enabling PMEOffload because PMEInterpOrder > 4.
+Warning: Always using force tables for GPU nonbonded kernel due to unsupported config parameters.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               2
+Info: NUMBER OF STEPS        500000
+Info: STEPS PER CYCLE        20
+Info: PERIODIC CELL BASIS 1  62.6153 0 0
+Info: PERIODIC CELL BASIS 2  0 62.6153 0
+Info: PERIODIC CELL BASIS 3  0 0 79.7545
+Info: PERIODIC CELL CENTER   0 0 0
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: EMPTY PATCH LOAD       40 ATOMS
+Info: VELOCITY FILE          step6.6_equilibration.vel
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           step7_production.dcd
+Info: DCD FREQUENCY          50000
+Info: DCD FIRST STEP         50000
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           step7_production.xst
+Info: XST FREQUENCY          5000
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        step7_production
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       step7_production.restart
+Info: RESTART FREQUENCY      5000
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: VDW FORCE SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 1.11
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        19.61
+Info: ENERGY OUTPUT STEPS    5000
+Info: ENERGY EVALUATION STEPS    5000
+Info: OUTPUT ENERGY PRECISION 4
+Info: OUPUT ENERGY PRECISION 4
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   310
+Info: LANGEVIN USING BBK INTEGRATOR
+Info: LANGEVIN DAMPING COEFFICIENT IS 1 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: LANGEVIN PISTON PRESSURE CONTROL ACTIVE
+Info:        TARGET PRESSURE IS 1.01325 BAR
+Info:     OSCILLATION PERIOD IS 50 FS
+Info:             DECAY TIME IS 25 FS
+Info:     PISTON TEMPERATURE IS 310 K
+Info:       PRESSURE CONTROL IS GROUP-BASED
+Info:    INITIAL STRAIN RATE IS 4.79404e-05 4.79404e-05 -0.000335668
+Info:       CELL FLUCTUATION IS ANISOTROPIC
+Info:     SHAPE OF CELL IS CONSTRAINED IN X-Y PLANE
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.257952
+Info: PME INTERPOLATION ORDER     6
+Info: PME GRID DIMENSIONS         64 64 80
+Info: PME MAXIMUM GRID SPACING    1
+Info: PME RECIPROCAL SUM OFFLOADED TO GPU
+Info: PME CALCULATION WILL BE PERFORMED ON GPU
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      1
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1729624430
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         step5_input.pdb
+Info: STRUCTURE FILE         step5_input.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             toppar/par_all36m_prot.prm
+Info: PARAMETERS             toppar/par_all36_na.prm
+Info: PARAMETERS             toppar/par_all36_carb.prm
+Info: PARAMETERS             toppar/par_all36_lipid.prm
+Info: PARAMETERS             toppar/par_all36_cgenff.prm
+Info: PARAMETERS             toppar/par_interface.prm
+Info: PARAMETERS             toppar/toppar_all36_moreions.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig.str
+Info: PARAMETERS             toppar/toppar_all36_nano_lig_patch.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer.str
+Info: PARAMETERS             toppar/toppar_all36_synthetic_polymer_patch.str
+Info: PARAMETERS             toppar/toppar_all36_polymer_solvent.str
+Info: PARAMETERS             toppar/toppar_water_ions.str
+Info: PARAMETERS             toppar/toppar_dum_noble_gases.str
+Info: PARAMETERS             toppar/toppar_ions_won.str
+Info: PARAMETERS             toppar/cam.str
+Info: PARAMETERS             toppar/toppar_all36_prot_arg0.str
+Info: PARAMETERS             toppar/toppar_all36_prot_c36m_d_aminoacids.str
+Info: PARAMETERS             toppar/toppar_all36_prot_fluoro_alkanes.str
+Info: PARAMETERS             toppar/toppar_all36_prot_heme.str
+Info: PARAMETERS             toppar/toppar_all36_prot_na_combined.str
+Info: PARAMETERS             toppar/toppar_all36_prot_retinol.str
+Info: PARAMETERS             toppar/toppar_all36_prot_model.str
+Info: PARAMETERS             toppar/toppar_all36_prot_modify_res.str
+Info: PARAMETERS             toppar/toppar_all36_na_nad_ppi.str
+Info: PARAMETERS             toppar/toppar_all36_na_rna_modified.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_sphingo.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_archaeal.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_bacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cardiolipin.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_cholesterol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_dag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_inositol.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lnp.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_lps.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_mycobacterial.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_miscellaneous.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_model.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_prot.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_tag.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_yeast.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_hmmm.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_detergent.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_ether.str
+Info: PARAMETERS             toppar/toppar_all36_lipid_oxidized.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycolipid.str
+Info: PARAMETERS             toppar/toppar_all36_carb_glycopeptide.str
+Info: PARAMETERS             toppar/toppar_all36_carb_imlab.str
+Info: PARAMETERS             toppar/toppar_all36_label_spin.str
+Info: PARAMETERS             toppar/toppar_all36_label_fluorophore.str
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     step6.6_equilibration.coor
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR NHL-C-CTO1-HAL1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=3  delta=0
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR O-C-CTO1-HAL1
+PREVIOUS VALUES MULTIPLICITY: 1
+  k=0  n=1  delta=0
+INCREASING MULTIPLICITY TO: 2
+  k=0  n=2  delta=180
+Warning: SKIPPING PART OF PARAMETER FILE AFTER RETURN STATEMENT
+
+Warning: DUPLICATE DIHEDRAL ENTRY FOR CTL2-CG2O5-CTL1-CTL3
+PREVIOUS VALUES MULTIPLICITY: 2
+  k=0.75  n=1  delta=0
+  k=0.18  n=2  delta=180
+INCREASING MULTIPLICITY TO: 3
+  k=0.065  n=3  delta=0
+
+Warning: DUPLICATE BOND ENTRY FOR CEL1-CL
+PREVIOUS VALUES  k=440  x0=1.489
+   USING VALUES  k=300  x0=1.48
+Info: SUMMARY OF PARAMETERS:
+Info: 1988 BONDS
+Info: 6776 ANGLES
+Info: 19939 DIHEDRAL
+Info: 430 IMPROPER
+Info: 28 CROSSTERM
+Info: 751 VDW
+Info: 122 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Warning: Ignored 5414 bonds with zero force constants.
+Warning: Will get H-H distance in rigid H2O from H-O-H angle.
+Info: TIME FOR READING PSF FILE: 5.03275
+Info: Reading pdb file step5_input.pdb
+Info: TIME FOR READING PDB FILE: 0.0274697
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 32348 ATOMS
+Info: 26788 BONDS
+Info: 36134 ANGLES
+Info: 42720 DIHEDRALS
+Info: 240 IMPROPERS
+Info: 0 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 26082 RIGID BONDS
+Info: 70962 DEGREES OF FREEDOM
+Info: 11680 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 11680 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 189506 amu
+Info: TOTAL CHARGE = 6.25849e-06 e
+Info: MASS DENSITY = 1.00639 g/cm^3
+Info: ATOM DENSITY = 0.10345 atoms/A^3
+Info: *****************************
+Info: Reading from binary file step6.6_equilibration.coor
+Info: 
+Info: Entering startup at 6.30719 s, 0 MB of memory in use
+Info: Startup phase 0 took 3.5136e-05 s, 0 MB of memory in use
+Info: ADDED 105642 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.0158032 s, 0 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000325096 AT 11.9556
+Info: INCONSISTENCY IN SCOR TABLE ENERGY VS FORCE: 0.000324844 AT 11.9556
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0097919 s, 0 MB of memory in use
+Info: Startup phase 3 took 4.2375e-05 s, 0 MB of memory in use
+Info: Startup phase 4 took 3.3616e-05 s, 0 MB of memory in use
+Info: Startup phase 5 took 1.6858e-05 s, 0 MB of memory in use
+Info: PATCH GRID IS 3 (PERIODIC) BY 3 (PERIODIC) BY 4 (PERIODIC)
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: Reading from binary file step6.6_equilibration.vel
+Info: REMOVING COM VELOCITY -0.0077149 0.0587124 0.0122391
+Info: LARGEST PATCH (18) HAS 963 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.0038101 s, 0 MB of memory in use
+Info: Use 3D box decompostion in PME FFT.
+Info: PME using 1 x 1 x 1 pencil grid for FFT and reciprocal sum.
+Info: Startup phase 7 took 6.4505e-05 s, 0 MB of memory in use
+Info: Updated CUDA force table with 4096 elements.
+Info: Updated CUDA LJ table with 751 x 751 elements.
+Info: Startup phase 8 took 0.00591839 s, 0 MB of memory in use
+Info: Startup phase 9 took 4.7215e-05 s, 0 MB of memory in use
+Info: Startup phase 10 took 1.6677e-05 s, 0 MB of memory in use
+Info: Startup phase 11 took 0.000310025 s, 0 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 12 took 0.00156507 s, 0 MB of memory in use
+Info: CREATING 764 COMPUTE OBJECTS
+Info: Found 64 unique exclusion lists needing 232 bytes
+Info: Startup phase 13 took 0.00904105 s, 0 MB of memory in use
+Info: Startup phase 14 took 3.1453e-05 s, 0 MB of memory in use
+Info: Startup phase 15 took 6.0125e-05 s, 0 MB of memory in use
+Info: Finished startup at 6.35378 s, 0 MB of memory in use
+
+TCL: Original numsteps 500000 will be ignored.
+TCL: Running for 500000 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0      1738.1655      9709.8039      6309.0746        91.3633         -72557.8716       182.4211         0.0000         0.0000     21816.3604         -32710.6828       309.4189    -54527.0432    -32545.0223       309.4189             -4.7249        -0.0489    312691.6858        -4.7249        -0.0489
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+LDB: ============= START OF LOAD BALANCING ============== 6.55812
+LDB: ============== END OF LOAD BALANCING =============== 6.55818
+LDB: =============== DONE WITH MIGRATION ================ 6.55822
+LDB: ============= START OF LOAD BALANCING ============== 7.23141
+LDB: ============== END OF LOAD BALANCING =============== 7.23147
+LDB: =============== DONE WITH MIGRATION ================ 7.23155
+Info: Initial time: 1 CPUs 0.00859099 s/step 0.0497164 days/ns 0 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 7.40002
+LDB: ============== END OF LOAD BALANCING =============== 7.40008
+LDB: =============== DONE WITH MIGRATION ================ 7.40013
+LDB: ============= START OF LOAD BALANCING ============== 8.07546
+LDB: ============== END OF LOAD BALANCING =============== 8.07551
+LDB: =============== DONE WITH MIGRATION ================ 8.07561
+Info: Initial time: 1 CPUs 0.00843777 s/step 0.0488297 days/ns 0 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 8.9162
+LDB: ============== END OF LOAD BALANCING =============== 8.91626
+LDB: =============== DONE WITH MIGRATION ================ 8.91637
+Info: Initial time: 1 CPUs 0.00840897 s/step 0.048663 days/ns 0 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 9.76678
+LDB: ============== END OF LOAD BALANCING =============== 9.76683
+LDB: =============== DONE WITH MIGRATION ================ 9.76689
+Info: Benchmark time: 1 CPUs 0.00850244 s/step 0.049204 days/ns 0 MB memory
+Info: Benchmark time: 1 CPUs 0.0085482 s/step 0.0494687 days/ns 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00844515 s/step 0.0488724 days/ns 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00844842 s/step 0.0488913 days/ns 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00851204 s/step 0.0492595 days/ns 0 MB memory
+Info: Benchmark time: 1 CPUs 0.00842772 s/step 0.0487715 days/ns 0 MB memory
+LDB: ============= START OF LOAD BALANCING ============== 42.7447
+LDB: ============== END OF LOAD BALANCING =============== 42.7448
+LDB: =============== DONE WITH MIGRATION ================ 42.7448
+LDB: ============= START OF LOAD BALANCING ============== 43.5894
+LDB: ============== END OF LOAD BALANCING =============== 43.5895
+LDB: =============== DONE WITH MIGRATION ================ 43.5896
+TIMING: 5000  CPU: 42.2393, 0.00843989/step  Wall: 42.3441, 0.00846083/step, 1.16336 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 5000  averaging 20.4235 ns/day, 0.00846083 sec/step with standard deviation 0
+ENERGY:    5000      1762.8811      9768.3229      6286.2014        73.1466         -72678.5841       417.8271         0.0000         0.0000     21920.7333         -32449.4717       310.8992    -54370.2050    -32277.7915       309.7257            303.2212       297.1734    313250.1282         2.3943         2.3842
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 5000
+WRITING COORDINATES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=5000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 5000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=5000) takes 0.000 seconds, 0.000 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 76.7993
+LDB: ============== END OF LOAD BALANCING =============== 76.7994
+LDB: =============== DONE WITH MIGRATION ================ 76.7994
+LDB: ============= START OF LOAD BALANCING ============== 77.6487
+LDB: ============== END OF LOAD BALANCING =============== 77.6488
+LDB: =============== DONE WITH MIGRATION ================ 77.6489
+TIMING: 10000  CPU: 84.718, 0.00849572/step  Wall: 84.9383, 0.00851886/step, 1.15951 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 10000  averaging 20.3537 ns/day, 0.00848984 sec/step with standard deviation 4.10333e-05
+ENERGY:   10000      1766.5401      9850.8008      6316.2690        74.7452         -72839.7647       318.5231         0.0000         0.0000     22072.9378         -32439.9487       313.0579    -54512.8865    -32265.6431       310.2348             89.8640        96.7438    311807.0076         6.2527         6.2362
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 10000
+WRITING COORDINATES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=10000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 10000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=10000) takes 0.000 seconds, 0.000 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 110.877
+LDB: ============== END OF LOAD BALANCING =============== 110.877
+LDB: =============== DONE WITH MIGRATION ================ 110.878
+LDB: ============= START OF LOAD BALANCING ============== 111.727
+LDB: ============== END OF LOAD BALANCING =============== 111.727
+LDB: =============== DONE WITH MIGRATION ================ 111.727
+TIMING: 15000  CPU: 127.379, 0.00853229/step  Wall: 127.714, 0.00855516/step, 1.15257 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 15000  averaging 20.3017 ns/day, 0.00851162 sec/step with standard deviation 4.75812e-05
+ENERGY:   15000      1723.7880      9708.9115      6292.9320        78.2615         -72688.1333       146.1412         0.0000         0.0000     21809.8149         -32928.2842       309.3261    -54738.0990    -32757.8661       309.4613           -302.2801      -304.7832    312623.4768         3.6293         3.6417
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 15000
+WRITING COORDINATES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=15000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 15000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=15000) takes 0.000 seconds, 0.000 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 145.132
+LDB: ============== END OF LOAD BALANCING =============== 145.132
+LDB: =============== DONE WITH MIGRATION ================ 145.132
+LDB: ============= START OF LOAD BALANCING ============== 145.989
+LDB: ============== END OF LOAD BALANCING =============== 145.989
+LDB: =============== DONE WITH MIGRATION ================ 145.989
+TIMING: 20000  CPU: 169.979, 0.00851993/step  Wall: 170.431, 0.00854343/step, 1.13912 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 20000  averaging 20.2827 ns/day, 0.00851957 sec/step with standard deviation 4.19797e-05
+ENERGY:   20000      1753.9671      9729.9552      6302.3898        72.3771         -72612.2960       204.8635         0.0000         0.0000     21705.6300         -32843.1133       307.8484    -54548.7433    -32675.1566       309.1727           -751.8625      -745.2978    313475.3817         1.5929         1.5080
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 20000
+WRITING COORDINATES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=20000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 20000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=20000) takes 0.000 seconds, 0.000 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 179.451
+LDB: ============== END OF LOAD BALANCING =============== 179.451
+LDB: =============== DONE WITH MIGRATION ================ 179.451
+LDB: ============= START OF LOAD BALANCING ============== 180.3
+LDB: ============== END OF LOAD BALANCING =============== 180.3
+LDB: =============== DONE WITH MIGRATION ================ 180.3
+LDB: ============= START OF LOAD BALANCING ============== 213.564
+LDB: ============== END OF LOAD BALANCING =============== 213.564
+LDB: =============== DONE WITH MIGRATION ================ 213.564
+LDB: ============= START OF LOAD BALANCING ============== 214.414
+LDB: ============== END OF LOAD BALANCING =============== 214.414
+LDB: =============== DONE WITH MIGRATION ================ 214.414
+TIMING: 25000  CPU: 212.648, 0.00853388/step  Wall: 213.208, 0.00855538/step, 1.12884 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 25000  averaging 20.2657 ns/day, 0.00852673 sec/step with standard deviation 3.97271e-05
+ENERGY:   25000      1738.7202      9842.7364      6409.8952        81.2169         -72715.3121       206.1615         0.0000         0.0000     21709.4249         -32727.1569       307.9022    -54436.5818    -32564.4776       310.6177           -139.4422      -140.0294    313502.6370         0.5646         0.5649
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 25000
+WRITING COORDINATES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=25000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 25000
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=25000) takes 0.000 seconds, 0.000 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 247.767
+LDB: ============== END OF LOAD BALANCING =============== 247.767
+LDB: =============== DONE WITH MIGRATION ================ 247.767
+LDB: ============= START OF LOAD BALANCING ============== 248.621
+LDB: ============== END OF LOAD BALANCING =============== 248.621
+LDB: =============== DONE WITH MIGRATION ================ 248.621
+TIMING: 30000  CPU: 255.282, 0.00852669/step  Wall: 255.949, 0.00854822/step, 1.11602 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 30000  averaging 20.2572 ns/day, 0.00853031 sec/step with standard deviation 3.65997e-05
+ENERGY:   30000      1734.1137      9796.2718      6328.8716        70.8963         -72770.3396       206.3796         0.0000         0.0000     21883.6318         -32750.1748       310.3730    -54633.8066    -32579.1588       308.9879           -372.3141      -373.8938    314878.2502        -1.2265        -1.2025
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 30000
+WRITING COORDINATES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=30000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 30000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 281.95
+LDB: ============== END OF LOAD BALANCING =============== 281.95
+LDB: =============== DONE WITH MIGRATION ================ 281.95
+LDB: ============= START OF LOAD BALANCING ============== 282.808
+LDB: ============== END OF LOAD BALANCING =============== 282.808
+LDB: =============== DONE WITH MIGRATION ================ 282.808
+TIMING: 35000  CPU: 298.122, 0.00856807/step  Wall: 298.917, 0.00859352/step, 1.11 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 35000  averaging 20.2358 ns/day, 0.00853934 sec/step with standard deviation 4.10739e-05
+ENERGY:   35000      1779.9260      9913.3637      6348.8425        69.7607         -72758.6873       270.5663         0.0000         0.0000     21855.7534         -32520.4748       309.9776    -54376.2281    -32353.6056       309.4273           -314.8725      -308.8980    314160.7004         2.3678         2.4085
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 35000
+WRITING COORDINATES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=35000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 35000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 316.556
+LDB: ============== END OF LOAD BALANCING =============== 316.556
+LDB: =============== DONE WITH MIGRATION ================ 316.556
+LDB: ============= START OF LOAD BALANCING ============== 317.438
+LDB: ============== END OF LOAD BALANCING =============== 317.438
+LDB: =============== DONE WITH MIGRATION ================ 317.438
+TIMING: 40000  CPU: 340.999, 0.00857528/step  Wall: 341.914, 0.00859946/step, 1.09882 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 40000  averaging 20.218 ns/day, 0.00854686 sec/step with standard deviation 4.35644e-05
+ENERGY:   40000      1753.3226      9656.3935      6314.8071        82.1220         -72534.0284       152.7563         0.0000         0.0000     21649.9958         -32924.6310       307.0594    -54574.6269    -32761.4934       308.9235           -365.9343      -374.1640    312883.2970         1.6613         1.6754
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 40000
+WRITING COORDINATES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=40000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 40000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 350.812
+LDB: ============== END OF LOAD BALANCING =============== 350.812
+LDB: =============== DONE WITH MIGRATION ================ 350.812
+LDB: ============= START OF LOAD BALANCING ============== 351.664
+LDB: ============== END OF LOAD BALANCING =============== 351.664
+LDB: =============== DONE WITH MIGRATION ================ 351.665
+LDB: ============= START OF LOAD BALANCING ============== 385.102
+LDB: ============== END OF LOAD BALANCING =============== 385.102
+LDB: =============== DONE WITH MIGRATION ================ 385.102
+LDB: ============= START OF LOAD BALANCING ============== 385.955
+LDB: ============== END OF LOAD BALANCING =============== 385.955
+LDB: =============== DONE WITH MIGRATION ================ 385.955
+TIMING: 45000  CPU: 383.718, 0.00854378/step  Wall: 384.741, 0.00856545/step, 1.08258 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 45000  averaging 20.2131 ns/day, 0.00854892 sec/step with standard deviation 4.12195e-05
+ENERGY:   45000      1733.0592      9836.9479      6367.3868        66.4663         -72703.2860       268.9285         0.0000         0.0000     21781.4668         -32649.0305       308.9240    -54430.4973    -32484.6093       309.1975           -214.0330      -220.6489    312280.0273         3.1804         3.1881
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 45000
+WRITING COORDINATES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=45000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 45000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 419.251
+LDB: ============== END OF LOAD BALANCING =============== 419.251
+LDB: =============== DONE WITH MIGRATION ================ 419.251
+LDB: ============= START OF LOAD BALANCING ============== 420.109
+LDB: ============== END OF LOAD BALANCING =============== 420.109
+LDB: =============== DONE WITH MIGRATION ================ 420.109
+TIMING: 50000  CPU: 426.503, 0.00855702/step  Wall: 427.635, 0.0085788/step, 1.07235 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 50000  averaging 20.206 ns/day, 0.00855191 sec/step with standard deviation 3.99944e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:   50000      1699.8553      9895.5022      6384.6649        75.9141         -72875.5589       327.7814         0.0000         0.0000     21750.4058         -32741.4353       308.4835    -54491.8411    -32582.7927       310.1983            480.1412       461.8662    311307.5198         0.3302         0.3767
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 50000
+OPENING COORDINATE DCD FILE
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 50000
+WRITING COORDINATES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=50000) takes 0.001 seconds, 0.000 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 50000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 453.742
+LDB: ============== END OF LOAD BALANCING =============== 453.742
+LDB: =============== DONE WITH MIGRATION ================ 453.742
+LDB: ============= START OF LOAD BALANCING ============== 454.612
+LDB: ============== END OF LOAD BALANCING =============== 454.612
+LDB: =============== DONE WITH MIGRATION ================ 454.612
+TIMING: 55000  CPU: 469.332, 0.00856581/step  Wall: 470.586, 0.00859007/step, 1.06183 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 55000  averaging 20.1978 ns/day, 0.00855538 sec/step with standard deviation 3.96479e-05
+ENERGY:   55000      1755.4304      9798.6563      6322.1111        67.8922         -73007.8266       443.1674         0.0000         0.0000     21973.9169         -32646.6523       311.6535    -54620.5691    -32487.6223       308.7383            259.5352       252.2689    312652.7395         2.3514         2.3422
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 55000
+WRITING COORDINATES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 55000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 488.204
+LDB: ============== END OF LOAD BALANCING =============== 488.204
+LDB: =============== DONE WITH MIGRATION ================ 488.204
+LDB: ============= START OF LOAD BALANCING ============== 489.055
+LDB: ============== END OF LOAD BALANCING =============== 489.055
+LDB: =============== DONE WITH MIGRATION ================ 489.055
+TIMING: 60000  CPU: 512.13, 0.00855975/step  Wall: 513.497, 0.00858234/step, 1.04895 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 60000  averaging 20.1925 ns/day, 0.00855763 sec/step with standard deviation 3.85956e-05
+ENERGY:   60000      1777.8888      9804.6521      6375.0117        79.7705         -72737.5956       221.9877         0.0000         0.0000     21735.5060         -32742.7788       308.2721    -54478.2848    -32576.0205       309.4504             69.0597        67.8087    311802.1367         1.0549         1.0779
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 60000
+WRITING COORDINATES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 60000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 522.401
+LDB: ============== END OF LOAD BALANCING =============== 522.401
+LDB: =============== DONE WITH MIGRATION ================ 522.401
+LDB: ============= START OF LOAD BALANCING ============== 523.271
+LDB: ============== END OF LOAD BALANCING =============== 523.271
+LDB: =============== DONE WITH MIGRATION ================ 523.271
+LDB: ============= START OF LOAD BALANCING ============== 556.643
+LDB: ============== END OF LOAD BALANCING =============== 556.643
+LDB: =============== DONE WITH MIGRATION ================ 556.643
+LDB: ============= START OF LOAD BALANCING ============== 557.499
+LDB: ============== END OF LOAD BALANCING =============== 557.499
+LDB: =============== DONE WITH MIGRATION ================ 557.499
+TIMING: 65000  CPU: 554.813, 0.00853647/step  Wall: 556.288, 0.00855817/step, 1.03411 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 65000  averaging 20.1924 ns/day, 0.00855767 sec/step with standard deviation 3.69528e-05
+ENERGY:   65000      1728.5987      9744.0625      6392.1265        69.9316         -72685.1941       248.9593         0.0000         0.0000     21661.2428         -32840.2727       307.2189    -54501.5155    -32676.6883       308.5468            -41.4724       -39.6882    313904.6457         0.8084         0.7391
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 65000
+WRITING COORDINATES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 65000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 590.853
+LDB: ============== END OF LOAD BALANCING =============== 590.853
+LDB: =============== DONE WITH MIGRATION ================ 590.853
+LDB: ============= START OF LOAD BALANCING ============== 591.706
+LDB: ============== END OF LOAD BALANCING =============== 591.706
+LDB: =============== DONE WITH MIGRATION ================ 591.707
+TIMING: 70000  CPU: 597.459, 0.00852926/step  Wall: 599.048, 0.00855193/step, 1.02148 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 70000  averaging 20.1934 ns/day, 0.00855726 sec/step with standard deviation 3.55362e-05
+ENERGY:   70000      1747.0184      9826.1275      6317.8081        65.5139         -72888.9718       471.8141         0.0000         0.0000     21700.5132         -32760.1766       307.7759    -54460.6898    -32599.6856       309.0707            175.9479       177.4584    313102.6625         0.5476         0.5785
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 70000
+WRITING COORDINATES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 70000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 625.161
+LDB: ============== END OF LOAD BALANCING =============== 625.161
+LDB: =============== DONE WITH MIGRATION ================ 625.161
+LDB: ============= START OF LOAD BALANCING ============== 626.014
+LDB: ============== END OF LOAD BALANCING =============== 626.014
+LDB: =============== DONE WITH MIGRATION ================ 626.015
+TIMING: 75000  CPU: 640.193, 0.00854669/step  Wall: 641.889, 0.0085683/step, 1.01154 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 75000  averaging 20.1916 ns/day, 0.00855799 sec/step with standard deviation 3.4362e-05
+ENERGY:   75000      1740.5420      9721.2561      6258.4312        71.5418         -72949.4384       361.8869         0.0000         0.0000     21793.6277         -33002.1528       309.0965    -54795.7805    -32833.8541       309.5325            118.5540       122.7526    312181.0434        -2.2133        -2.2601
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 75000
+WRITING COORDINATES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 75000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 659.345
+LDB: ============== END OF LOAD BALANCING =============== 659.345
+LDB: =============== DONE WITH MIGRATION ================ 659.345
+LDB: ============= START OF LOAD BALANCING ============== 660.197
+LDB: ============== END OF LOAD BALANCING =============== 660.197
+LDB: =============== DONE WITH MIGRATION ================ 660.197
+TIMING: 80000  CPU: 682.981, 0.00855768/step  Wall: 684.787, 0.00857944/step, 1.00093 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 80000  averaging 20.1885 ns/day, 0.00855933 sec/step with standard deviation 3.36271e-05
+ENERGY:   80000      1774.9784      9942.4587      6292.6428        67.9930         -72546.5889       249.8201         0.0000         0.0000     21705.5545         -32513.1414       307.8474    -54218.6958    -32340.7952       309.0718            155.8155       155.3343    313670.3019        -0.1458        -0.1870
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 80000
+WRITING COORDINATES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 80000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 693.702
+LDB: ============== END OF LOAD BALANCING =============== 693.702
+LDB: =============== DONE WITH MIGRATION ================ 693.702
+LDB: ============= START OF LOAD BALANCING ============== 694.561
+LDB: ============== END OF LOAD BALANCING =============== 694.561
+LDB: =============== DONE WITH MIGRATION ================ 694.561
+LDB: ============= START OF LOAD BALANCING ============== 728.001
+LDB: ============== END OF LOAD BALANCING =============== 728.001
+LDB: =============== DONE WITH MIGRATION ================ 728.001
+LDB: ============= START OF LOAD BALANCING ============== 728.857
+LDB: ============== END OF LOAD BALANCING =============== 728.857
+LDB: =============== DONE WITH MIGRATION ================ 728.857
+TIMING: 85000  CPU: 725.863, 0.00857647/step  Wall: 727.787, 0.00860001/step, 0.99139 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 85000  averaging 20.1828 ns/day, 0.00856173 sec/step with standard deviation 3.40207e-05
+ENERGY:   85000      1766.1391      9790.8447      6312.1818        82.9015         -72978.7081       336.9872         0.0000         0.0000     21905.4405         -32784.2133       310.6823    -54689.6538    -32616.6298       309.4878           -208.9172      -200.7151    311791.3144        -0.4293        -0.4135
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 85000
+WRITING COORDINATES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 85000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 762.31
+LDB: ============== END OF LOAD BALANCING =============== 762.31
+LDB: =============== DONE WITH MIGRATION ================ 762.31
+LDB: ============= START OF LOAD BALANCING ============== 763.187
+LDB: ============== END OF LOAD BALANCING =============== 763.187
+LDB: =============== DONE WITH MIGRATION ================ 763.187
+TIMING: 90000  CPU: 768.476, 0.00852261/step  Wall: 770.504, 0.00854338/step, 0.972996 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 90000  averaging 20.1852 ns/day, 0.00856071 sec/step with standard deviation 3.32872e-05
+ENERGY:   90000      1704.2528      9713.1198      6246.1130        63.6675         -73091.7038       503.9522         0.0000         0.0000     21754.4364         -33106.1621       308.5406    -54860.5986    -32942.1912       309.6379            725.4767       714.8197    310955.2621         1.2861         1.2975
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 90000
+WRITING COORDINATES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 90000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 796.652
+LDB: ============== END OF LOAD BALANCING =============== 796.652
+LDB: =============== DONE WITH MIGRATION ================ 796.652
+LDB: ============= START OF LOAD BALANCING ============== 797.52
+LDB: ============== END OF LOAD BALANCING =============== 797.52
+LDB: =============== DONE WITH MIGRATION ================ 797.52
+TIMING: 95000  CPU: 811.324, 0.00856956/step  Wall: 813.463, 0.00859195/step, 0.966594 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 95000  averaging 20.1814 ns/day, 0.00856235 sec/step with standard deviation 3.31337e-05
+ENERGY:   95000      1731.1010      9745.4054      6254.2018        61.0882         -72950.8055       356.5335         0.0000         0.0000     21718.5050         -33083.9707       308.0310    -54802.4757    -32911.8806       308.9726           -125.7394      -120.1118    312295.7015         2.4034         2.3806
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 95000
+WRITING COORDINATES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 95000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 830.948
+LDB: ============== END OF LOAD BALANCING =============== 830.948
+LDB: =============== DONE WITH MIGRATION ================ 830.948
+LDB: ============= START OF LOAD BALANCING ============== 831.804
+LDB: ============== END OF LOAD BALANCING =============== 831.804
+LDB: =============== DONE WITH MIGRATION ================ 831.804
+TIMING: 100000  CPU: 854.099, 0.00855488/step  Wall: 856.352, 0.00857774/step, 0.953082 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 100000  averaging 20.1796 ns/day, 0.00856312 sec/step with standard deviation 3.24331e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  100000      1724.3255      9830.3556      6333.7019        78.2705         -72811.7766       323.3867         0.0000         0.0000     21673.2048         -32848.5316       307.3885    -54521.7364    -32677.2482       308.6668            446.8049       441.2249    312897.8504         2.7672         2.7590
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 100000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 100000
+WRITING COORDINATES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 100000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 865.249
+LDB: ============== END OF LOAD BALANCING =============== 865.249
+LDB: =============== DONE WITH MIGRATION ================ 865.25
+LDB: ============= START OF LOAD BALANCING ============== 866.111
+LDB: ============== END OF LOAD BALANCING =============== 866.111
+LDB: =============== DONE WITH MIGRATION ================ 866.111
+LDB: ============= START OF LOAD BALANCING ============== 899.407
+LDB: ============== END OF LOAD BALANCING =============== 899.407
+LDB: =============== DONE WITH MIGRATION ================ 899.407
+LDB: ============= START OF LOAD BALANCING ============== 903.117
+LDB: ============== END OF LOAD BALANCING =============== 903.117
+LDB: =============== DONE WITH MIGRATION ================ 903.117
+TIMING: 105000  CPU: 899.322, 0.00904463/step  Wall: 902.231, 0.00917579/step, 1.00679 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 105000  averaging 20.111 ns/day, 0.0085923 sec/step with standard deviation 0.000137382
+ENERGY:  105000      1756.5158      9786.1608      6313.4428        72.8758         -72883.5202       221.4406         0.0000         0.0000     21867.0891         -32865.9953       310.1384    -54733.0844    -32703.8401       307.9705           -131.1183      -130.8284    313414.1566         1.0117         0.9613
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 105000
+WRITING COORDINATES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 105000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 938.11
+LDB: ============== END OF LOAD BALANCING =============== 938.11
+LDB: =============== DONE WITH MIGRATION ================ 938.11
+LDB: ============= START OF LOAD BALANCING ============== 939.009
+LDB: ============== END OF LOAD BALANCING =============== 939.009
+LDB: =============== DONE WITH MIGRATION ================ 939.009
+TIMING: 110000  CPU: 943.15, 0.00876565/step  Wall: 946.544, 0.00886251/step, 0.960105 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 110000  averaging 20.0823 ns/day, 0.00860458 sec/step with standard deviation 0.000145924
+ENERGY:  110000      1782.0909      9912.0753      6270.0818        71.1269         -72651.0241       174.5241         0.0000         0.0000     21871.9166         -32569.2086       310.2068    -54441.1252    -32408.6904       309.1023           -195.8107      -196.7438    314208.3450         0.9815         0.9565
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 110000
+WRITING COORDINATES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 110000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 972.717
+LDB: ============== END OF LOAD BALANCING =============== 972.717
+LDB: =============== DONE WITH MIGRATION ================ 972.717
+LDB: ============= START OF LOAD BALANCING ============== 973.591
+LDB: ============== END OF LOAD BALANCING =============== 973.591
+LDB: =============== DONE WITH MIGRATION ================ 973.591
+TIMING: 115000  CPU: 986.168, 0.0086036/step  Wall: 989.701, 0.00863159/step, 0.9231 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 115000  averaging 20.0796 ns/day, 0.00860575 sec/step with standard deviation 0.00014268
+ENERGY:  115000      1685.3746      9813.8648      6289.0275        68.2726         -72933.7045       301.8053         0.0000         0.0000     21729.1430         -33046.2167       308.1819    -54775.3597    -32876.2249       308.8811            159.8261       160.7546    313568.8187         5.2719         5.2388
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 115000
+WRITING COORDINATES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 115000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1007.24
+LDB: ============== END OF LOAD BALANCING =============== 1007.24
+LDB: =============== DONE WITH MIGRATION ================ 1007.24
+LDB: ============= START OF LOAD BALANCING ============== 1008.1
+LDB: ============== END OF LOAD BALANCING =============== 1008.1
+LDB: =============== DONE WITH MIGRATION ================ 1008.1
+TIMING: 120000  CPU: 1029.71, 0.00870852/step  Wall: 1033.41, 0.00874152/step, 0.922716 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 120000  averaging 20.0664 ns/day, 0.00861141 sec/step with standard deviation 0.000142269
+ENERGY:  120000      1730.2239      9774.6124      6286.2203        72.0683         -72805.6806       198.3088         0.0000         0.0000     21752.2999         -32991.9470       308.5103    -54744.2469    -32825.5702       308.6215            154.4217       152.6872    313376.5170        -0.3494        -0.3165
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 120000
+WRITING COORDINATES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 120000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1042.4
+LDB: ============== END OF LOAD BALANCING =============== 1042.4
+LDB: =============== DONE WITH MIGRATION ================ 1042.4
+LDB: ============= START OF LOAD BALANCING ============== 1043.27
+LDB: ============== END OF LOAD BALANCING =============== 1043.27
+LDB: =============== DONE WITH MIGRATION ================ 1043.27
+LDB: ============= START OF LOAD BALANCING ============== 1077.79
+LDB: ============== END OF LOAD BALANCING =============== 1077.79
+LDB: =============== DONE WITH MIGRATION ================ 1077.79
+LDB: ============= START OF LOAD BALANCING ============== 1078.65
+LDB: ============== END OF LOAD BALANCING =============== 1078.65
+LDB: =============== DONE WITH MIGRATION ================ 1078.65
+TIMING: 125000  CPU: 1073.73, 0.00880447/step  Wall: 1077.58, 0.00883353/step, 0.920159 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 125000  averaging 20.0457 ns/day, 0.00862029 sec/step with standard deviation 0.000146187
+ENERGY:  125000      1786.3985      9669.3593      6307.0534        71.4901         -72759.0124       119.6948         0.0000         0.0000     21748.1567         -33056.8597       308.4516    -54805.0164    -32891.2535       308.0191           -648.3264      -647.0810    312686.6212         2.7695         2.7848
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 125000
+WRITING COORDINATES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 125000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1112.34
+LDB: ============== END OF LOAD BALANCING =============== 1112.34
+LDB: =============== DONE WITH MIGRATION ================ 1112.34
+LDB: ============= START OF LOAD BALANCING ============== 1113.2
+LDB: ============== END OF LOAD BALANCING =============== 1113.2
+LDB: =============== DONE WITH MIGRATION ================ 1113.2
+TIMING: 130000  CPU: 1116.61, 0.0085753/step  Wall: 1120.57, 0.00859928/step, 0.883814 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 130000  averaging 20.0476 ns/day, 0.00861949 sec/step with standard deviation 0.000143293
+ENERGY:  130000      1802.3117      9864.1737      6304.7049        67.1663         -72726.5601       345.6788         0.0000         0.0000     21749.6110         -32592.9137       308.4722    -54342.5248    -32427.7984       308.4932           -365.8569      -364.2071    314669.7269        -0.1628        -0.2027
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 130000
+WRITING COORDINATES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 130000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1146.7
+LDB: ============== END OF LOAD BALANCING =============== 1146.7
+LDB: =============== DONE WITH MIGRATION ================ 1146.7
+LDB: ============= START OF LOAD BALANCING ============== 1147.55
+LDB: ============== END OF LOAD BALANCING =============== 1147.55
+LDB: =============== DONE WITH MIGRATION ================ 1147.55
+TIMING: 135000  CPU: 1159.89, 0.00865582/step  Wall: 1163.96, 0.00867752/step, 0.879804 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 135000  averaging 20.0426 ns/day, 0.00862164 sec/step with standard deviation 0.000140953
+ENERGY:  135000      1722.3745      9938.3666      6261.5314        60.9548         -72836.2922       264.4335         0.0000         0.0000     21364.6003         -33224.0311       303.0116    -54588.6314    -33066.6050       309.5858            -29.8578       -18.7630    313391.0282         0.0711         0.0691
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 135000
+WRITING COORDINATES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 135000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1181.4
+LDB: ============== END OF LOAD BALANCING =============== 1181.4
+LDB: =============== DONE WITH MIGRATION ================ 1181.4
+LDB: ============= START OF LOAD BALANCING ============== 1182.25
+LDB: ============== END OF LOAD BALANCING =============== 1182.25
+LDB: =============== DONE WITH MIGRATION ================ 1182.25
+TIMING: 140000  CPU: 1202.72, 0.00856701/step  Wall: 1206.9, 0.00858776/step, 0.858776 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 140000  averaging 20.0454 ns/day, 0.00862043 sec/step with standard deviation 0.000138467
+ENERGY:  140000      1776.3509      9802.0498      6255.1173        71.8983         -73201.6428       475.2716         0.0000         0.0000     21747.0249         -33073.9301       308.4355    -54820.9550    -32908.9234       307.9895            276.8373       272.0806    310773.5592         0.6129         0.5790
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 140000
+WRITING COORDINATES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 140000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1215.89
+LDB: ============== END OF LOAD BALANCING =============== 1215.89
+LDB: =============== DONE WITH MIGRATION ================ 1215.89
+LDB: ============= START OF LOAD BALANCING ============== 1216.77
+LDB: ============== END OF LOAD BALANCING =============== 1216.77
+LDB: =============== DONE WITH MIGRATION ================ 1216.77
+LDB: ============= START OF LOAD BALANCING ============== 1250.28
+LDB: ============== END OF LOAD BALANCING =============== 1250.28
+LDB: =============== DONE WITH MIGRATION ================ 1250.28
+LDB: ============= START OF LOAD BALANCING ============== 1251.14
+LDB: ============== END OF LOAD BALANCING =============== 1251.14
+LDB: =============== DONE WITH MIGRATION ================ 1251.14
+TIMING: 145000  CPU: 1245.66, 0.00858712/step  Wall: 1249.94, 0.00860833/step, 0.848877 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 145000  averaging 20.0464 ns/day, 0.00862001 sec/step with standard deviation 0.00013599
+ENERGY:  145000      1740.5432      9870.4940      6264.3099        73.0688         -72995.5821       164.2444         0.0000         0.0000     21924.5495         -32958.3724       310.9533    -54882.9218    -32787.2259       309.9973           -319.0176      -309.0613    312575.9340         3.8874         3.9733
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 145000
+WRITING COORDINATES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 145000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1284.43
+LDB: ============== END OF LOAD BALANCING =============== 1284.43
+LDB: =============== DONE WITH MIGRATION ================ 1284.43
+LDB: ============= START OF LOAD BALANCING ============== 1285.41
+LDB: ============== END OF LOAD BALANCING =============== 1285.41
+LDB: =============== DONE WITH MIGRATION ================ 1285.41
+TIMING: 150000  CPU: 1288.48, 0.00856344/step  Wall: 1292.87, 0.00858547/step, 0.834699 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 150000  averaging 20.0491 ns/day, 0.00861886 sec/step with standard deviation 0.000133774
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  150000      1841.5361      9734.7872      6271.2043        59.6967         -73283.2084       415.4893         0.0000         0.0000     21975.9870         -32984.5077       311.6829    -54960.4947    -32816.3780       308.9368            -85.7033       -79.4441    313091.7950         0.1229         0.1303
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 150000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 150000
+WRITING COORDINATES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 150000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1318.92
+LDB: ============== END OF LOAD BALANCING =============== 1318.92
+LDB: =============== DONE WITH MIGRATION ================ 1318.92
+LDB: ============= START OF LOAD BALANCING ============== 1319.78
+LDB: ============== END OF LOAD BALANCING =============== 1319.78
+LDB: =============== DONE WITH MIGRATION ================ 1319.78
+TIMING: 155000  CPU: 1331.22, 0.00854892/step  Wall: 1335.73, 0.00857169/step, 0.821454 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 155000  averaging 20.0526 ns/day, 0.00861734 sec/step with standard deviation 0.000131798
+ENERGY:  155000      1744.6074      9728.5703      6313.5215        74.2037         -72940.2898       471.5398         0.0000         0.0000     21779.5846         -32828.2625       308.8973    -54607.8471    -32670.5180       309.3136            252.6531       257.3741    312951.1937         2.4564         2.4299
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 155000
+WRITING COORDINATES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 155000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1353.35
+LDB: ============== END OF LOAD BALANCING =============== 1353.35
+LDB: =============== DONE WITH MIGRATION ================ 1353.35
+LDB: ============= START OF LOAD BALANCING ============== 1354.21
+LDB: ============== END OF LOAD BALANCING =============== 1354.21
+LDB: =============== DONE WITH MIGRATION ================ 1354.21
+TIMING: 160000  CPU: 1374.04, 0.0085638/step  Wall: 1378.65, 0.00858551/step, 0.810854 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 160000  averaging 20.0549 ns/day, 0.00861634 sec/step with standard deviation 0.000129776
+ENERGY:  160000      1714.8320      9793.4818      6320.4459        75.3156         -72749.6119       159.7835         0.0000         0.0000     22042.7608         -32642.9924       312.6299    -54685.7531    -32480.9633       309.5994           -331.2953      -333.6588    313280.4044         1.0205         1.0565
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 160000
+WRITING COORDINATES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 160000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1387.56
+LDB: ============== END OF LOAD BALANCING =============== 1387.56
+LDB: =============== DONE WITH MIGRATION ================ 1387.56
+LDB: ============= START OF LOAD BALANCING ============== 1388.42
+LDB: ============== END OF LOAD BALANCING =============== 1388.42
+LDB: =============== DONE WITH MIGRATION ================ 1388.42
+LDB: ============= START OF LOAD BALANCING ============== 1421.95
+LDB: ============== END OF LOAD BALANCING =============== 1421.95
+LDB: =============== DONE WITH MIGRATION ================ 1421.95
+LDB: ============= START OF LOAD BALANCING ============== 1422.81
+LDB: ============== END OF LOAD BALANCING =============== 1422.81
+LDB: =============== DONE WITH MIGRATION ================ 1422.81
+TIMING: 165000  CPU: 1416.89, 0.00856965/step  Wall: 1421.61, 0.00859051/step, 0.799394 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 165000  averaging 20.0567 ns/day, 0.00861556 sec/step with standard deviation 0.000127812
+ENERGY:  165000      1783.3870      9859.9993      6305.9143        67.3603         -73382.7128       917.9302         0.0000         0.0000     21937.4824         -32510.6393       311.1368    -54448.1217    -32344.5041       310.5917            766.5836       758.9023    312261.8032         1.8694         1.8950
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 165000
+WRITING COORDINATES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 165000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1456.15
+LDB: ============== END OF LOAD BALANCING =============== 1456.15
+LDB: =============== DONE WITH MIGRATION ================ 1456.15
+LDB: ============= START OF LOAD BALANCING ============== 1457
+LDB: ============== END OF LOAD BALANCING =============== 1457
+LDB: =============== DONE WITH MIGRATION ================ 1457
+TIMING: 170000  CPU: 1459.52, 0.00852694/step  Wall: 1464.34, 0.00854749/step, 0.78352 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 170000  averaging 20.0614 ns/day, 0.00861356 sec/step with standard deviation 0.000126401
+ENERGY:  170000      1764.0732      9736.1050      6295.0453        68.1296         -72764.3436       371.5708         0.0000         0.0000     21776.0354         -32753.3844       308.8470    -54529.4198    -32588.1051       310.4984             -1.9853         2.2560    312989.2064         1.8232         1.8258
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 170000
+WRITING COORDINATES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 170000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1490.31
+LDB: ============== END OF LOAD BALANCING =============== 1490.31
+LDB: =============== DONE WITH MIGRATION ================ 1490.31
+LDB: ============= START OF LOAD BALANCING ============== 1491.17
+LDB: ============== END OF LOAD BALANCING =============== 1491.17
+LDB: =============== DONE WITH MIGRATION ================ 1491.17
+TIMING: 175000  CPU: 1502.13, 0.00852197/step  Wall: 1507.06, 0.00854237/step, 0.771186 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 175000  averaging 20.0661 ns/day, 0.00861152 sec/step with standard deviation 0.000125108
+ENERGY:  175000      1717.3196      9778.4246      6319.1961        60.5603         -72957.5196       546.3067         0.0000         0.0000     21689.6462         -32846.0661       307.6217    -54535.7122    -32681.7436       309.5629            315.2485       318.8376    313580.1314         1.1093         1.1896
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 175000
+WRITING COORDINATES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 175000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1524.52
+LDB: ============== END OF LOAD BALANCING =============== 1524.52
+LDB: =============== DONE WITH MIGRATION ================ 1524.52
+LDB: ============= START OF LOAD BALANCING ============== 1525.38
+LDB: ============== END OF LOAD BALANCING =============== 1525.38
+LDB: =============== DONE WITH MIGRATION ================ 1525.38
+TIMING: 180000  CPU: 1545.01, 0.00857526/step  Wall: 1550.04, 0.00859731/step, 0.764205 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 180000  averaging 20.0671 ns/day, 0.00861113 sec/step with standard deviation 0.00012333
+ENERGY:  180000      1758.2866      9745.6767      6262.4975        57.4494         -73127.2249       658.6660         0.0000         0.0000     21884.5621         -32760.0866       310.3862    -54644.6487    -32597.5095       309.3575            916.9769       928.0846    312979.6623         3.1652         3.1945
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 180000
+WRITING COORDINATES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 180000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1558.96
+LDB: ============== END OF LOAD BALANCING =============== 1558.96
+LDB: =============== DONE WITH MIGRATION ================ 1558.96
+LDB: ============= START OF LOAD BALANCING ============== 1559.82
+LDB: ============== END OF LOAD BALANCING =============== 1559.82
+LDB: =============== DONE WITH MIGRATION ================ 1559.82
+LDB: ============= START OF LOAD BALANCING ============== 1593.42
+LDB: ============== END OF LOAD BALANCING =============== 1593.42
+LDB: =============== DONE WITH MIGRATION ================ 1593.42
+LDB: ============= START OF LOAD BALANCING ============== 1594.28
+LDB: ============== END OF LOAD BALANCING =============== 1594.28
+LDB: =============== DONE WITH MIGRATION ================ 1594.28
+TIMING: 185000  CPU: 1587.94, 0.00858573/step  Wall: 1593.09, 0.00860872/step, 0.753263 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 185000  averaging 20.0672 ns/day, 0.00861106 sec/step with standard deviation 0.000121606
+ENERGY:  185000      1783.7812      9774.2960      6283.3353        72.1903         -72825.4647       284.7842         0.0000         0.0000     21833.3855         -32793.6923       309.6604    -54627.0778    -32633.0764       310.0054            158.3671       146.6486    311772.3014         1.6234         1.6519
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 185000
+WRITING COORDINATES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 185000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1627.78
+LDB: ============== END OF LOAD BALANCING =============== 1627.78
+LDB: =============== DONE WITH MIGRATION ================ 1627.78
+LDB: ============= START OF LOAD BALANCING ============== 1628.64
+LDB: ============== END OF LOAD BALANCING =============== 1628.64
+LDB: =============== DONE WITH MIGRATION ================ 1628.64
+TIMING: 190000  CPU: 1630.78, 0.00856939/step  Wall: 1636.04, 0.00859041/step, 0.73973 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 190000  averaging 20.0685 ns/day, 0.00861052 sec/step with standard deviation 0.000119998
+ENERGY:  190000      1730.6133      9683.6530      6263.8156        67.7301         -72587.6670       126.9628         0.0000         0.0000     21492.1715         -33222.7208       304.8210    -54714.8923    -33067.3818       309.0613           -540.3440      -547.5539    313521.6811        -0.1985        -0.1718
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 190000
+WRITING COORDINATES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 190000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1662.26
+LDB: ============== END OF LOAD BALANCING =============== 1662.26
+LDB: =============== DONE WITH MIGRATION ================ 1662.26
+LDB: ============= START OF LOAD BALANCING ============== 1663.13
+LDB: ============== END OF LOAD BALANCING =============== 1663.13
+LDB: =============== DONE WITH MIGRATION ================ 1663.13
+TIMING: 195000  CPU: 1673.7, 0.00858349/step  Wall: 1679.07, 0.00860671/step, 0.72918 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 195000  averaging 20.0687 ns/day, 0.00861042 sec/step with standard deviation 0.00011841
+ENERGY:  195000      1712.2130      9884.6161      6324.9538        81.3344         -72960.4533       321.0255         0.0000         0.0000     21772.1325         -32864.1780       308.7916    -54636.3105    -32700.1660       309.4868            388.7150       391.2340    312938.1832         0.3453         0.3115
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 195000
+WRITING COORDINATES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 195000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1696.57
+LDB: ============== END OF LOAD BALANCING =============== 1696.57
+LDB: =============== DONE WITH MIGRATION ================ 1696.57
+LDB: ============= START OF LOAD BALANCING ============== 1697.43
+LDB: ============== END OF LOAD BALANCING =============== 1697.43
+LDB: =============== DONE WITH MIGRATION ================ 1697.43
+TIMING: 200000  CPU: 1716.56, 0.00857104/step  Wall: 1722.04, 0.00859322/step, 0.716101 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 200000  averaging 20.0697 ns/day, 0.00860999 sec/step with standard deviation 0.000116914
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  200000      1754.0906      9839.8631      6345.4643        72.7396         -72816.3728       267.2983         0.0000         0.0000     21857.1314         -32679.7855       309.9971    -54536.9169    -32515.8067       309.2154            -27.1552       -28.2522    312727.7902         3.8327         3.8562
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 200000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 200000
+WRITING COORDINATES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 200000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1730.95
+LDB: ============== END OF LOAD BALANCING =============== 1730.95
+LDB: =============== DONE WITH MIGRATION ================ 1730.95
+LDB: ============= START OF LOAD BALANCING ============== 1731.81
+LDB: ============== END OF LOAD BALANCING =============== 1731.81
+LDB: =============== DONE WITH MIGRATION ================ 1731.81
+LDB: ============= START OF LOAD BALANCING ============== 1765.2
+LDB: ============== END OF LOAD BALANCING =============== 1765.2
+LDB: =============== DONE WITH MIGRATION ================ 1765.2
+LDB: ============= START OF LOAD BALANCING ============== 1766.06
+LDB: ============== END OF LOAD BALANCING =============== 1766.06
+LDB: =============== DONE WITH MIGRATION ================ 1766.06
+TIMING: 205000  CPU: 1759.28, 0.00854482/step  Wall: 1764.87, 0.00856541/step, 0.701888 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 205000  averaging 20.0722 ns/day, 0.0086089 sec/step with standard deviation 0.000115653
+ENERGY:  205000      1796.3674      9898.8030      6294.5076        74.0328         -72748.9242       382.6163         0.0000         0.0000     22001.9647         -32300.6324       312.0513    -54302.5972    -32134.5697       309.4167             38.0076        41.4834    312810.4719         2.5660         2.5784
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 205000
+WRITING COORDINATES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 205000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1799.59
+LDB: ============== END OF LOAD BALANCING =============== 1799.59
+LDB: =============== DONE WITH MIGRATION ================ 1799.59
+LDB: ============= START OF LOAD BALANCING ============== 1800.45
+LDB: ============== END OF LOAD BALANCING =============== 1800.45
+LDB: =============== DONE WITH MIGRATION ================ 1800.45
+TIMING: 210000  CPU: 1802.15, 0.00857404/step  Wall: 1807.85, 0.00859655/step, 0.6925 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 210000  averaging 20.0729 ns/day, 0.00860861 sec/step with standard deviation 0.00011425
+ENERGY:  210000      1698.5948      9831.1600      6299.4894        71.0400         -72761.7516       332.5370         0.0000         0.0000     22044.9691         -32483.9613       312.6612    -54528.9304    -32311.6740       310.6010            226.4954       232.3540    312431.8283         0.9812         1.0310
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 210000
+WRITING COORDINATES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 210000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1833.86
+LDB: ============== END OF LOAD BALANCING =============== 1833.86
+LDB: =============== DONE WITH MIGRATION ================ 1833.86
+LDB: ============= START OF LOAD BALANCING ============== 1834.72
+LDB: ============== END OF LOAD BALANCING =============== 1834.72
+LDB: =============== DONE WITH MIGRATION ================ 1834.72
+TIMING: 215000  CPU: 1844.96, 0.00856245/step  Wall: 1850.77, 0.0085848/step, 0.67963 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 215000  averaging 20.0742 ns/day, 0.00860806 sec/step with standard deviation 0.00011294
+ENERGY:  215000      1758.7932      9811.8991      6347.8217        66.1333         -73013.0782       410.8118         0.0000         0.0000     21628.9043         -32988.7147       306.7602    -54617.6190    -32822.3363       308.9178           -230.1649      -238.2436    311479.7541         0.2901         0.2518
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 215000
+WRITING COORDINATES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 215000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1868.24
+LDB: ============== END OF LOAD BALANCING =============== 1868.24
+LDB: =============== DONE WITH MIGRATION ================ 1868.24
+LDB: ============= START OF LOAD BALANCING ============== 1869.13
+LDB: ============== END OF LOAD BALANCING =============== 1869.13
+LDB: =============== DONE WITH MIGRATION ================ 1869.13
+TIMING: 220000  CPU: 1888.29, 0.0086642/step  Wall: 1894.21, 0.0086869/step, 0.675648 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 220000  averaging 20.07 ns/day, 0.00860985 sec/step with standard deviation 0.00011225
+ENERGY:  220000      1761.0646      9896.3965      6316.3758        70.0891         -72816.5818       142.5280         0.0000         0.0000     21975.1626         -32654.9653       311.6712    -54630.1279    -32480.0061       309.8665           -120.8002      -120.6059    312244.3244         2.0956         2.0848
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 220000
+WRITING COORDINATES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 220000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1903.12
+LDB: ============== END OF LOAD BALANCING =============== 1903.12
+LDB: =============== DONE WITH MIGRATION ================ 1903.12
+LDB: ============= START OF LOAD BALANCING ============== 1903.97
+LDB: ============== END OF LOAD BALANCING =============== 1903.97
+LDB: =============== DONE WITH MIGRATION ================ 1903.97
+LDB: ============= START OF LOAD BALANCING ============== 1937.31
+LDB: ============== END OF LOAD BALANCING =============== 1937.31
+LDB: =============== DONE WITH MIGRATION ================ 1937.31
+LDB: ============= START OF LOAD BALANCING ============== 1938.16
+LDB: ============== END OF LOAD BALANCING =============== 1938.16
+LDB: =============== DONE WITH MIGRATION ================ 1938.16
+TIMING: 225000  CPU: 1930.94, 0.00853115/step  Wall: 1936.96, 0.00855168/step, 0.653254 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 225000  averaging 20.0731 ns/day, 0.00860856 sec/step with standard deviation 0.000111305
+ENERGY:  225000      1760.1665      9783.0565      6336.8673        78.3404         -72842.8759       182.3257         0.0000         0.0000     21851.1160         -32851.0035       309.9118    -54702.1195    -32684.2361       309.7439            145.5238       141.7471    312591.3602         1.7369         1.6675
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 225000
+WRITING COORDINATES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 225000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 1971.7
+LDB: ============== END OF LOAD BALANCING =============== 1971.7
+LDB: =============== DONE WITH MIGRATION ================ 1971.7
+LDB: ============= START OF LOAD BALANCING ============== 1972.56
+LDB: ============== END OF LOAD BALANCING =============== 1972.56
+LDB: =============== DONE WITH MIGRATION ================ 1972.56
+TIMING: 230000  CPU: 1973.81, 0.00857402/step  Wall: 1979.95, 0.00859639/step, 0.644729 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 230000  averaging 20.0737 ns/day, 0.00860829 sec/step with standard deviation 0.000110076
+ENERGY:  230000      1710.4693      9801.3125      6324.0845        79.0655         -72804.0052       147.4514         0.0000         0.0000     21695.0975         -33046.5244       307.6990    -54741.6219    -32883.3462       309.1673            -33.3557       -35.3253    311929.2172        -0.0547        -0.0393
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 230000
+WRITING COORDINATES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 230000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2006.01
+LDB: ============== END OF LOAD BALANCING =============== 2006.01
+LDB: =============== DONE WITH MIGRATION ================ 2006.01
+LDB: ============= START OF LOAD BALANCING ============== 2006.87
+LDB: ============== END OF LOAD BALANCING =============== 2006.87
+LDB: =============== DONE WITH MIGRATION ================ 2006.87
+TIMING: 235000  CPU: 2016.69, 0.00857497/step  Wall: 2022.94, 0.00859811/step, 0.632916 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 235000  averaging 20.0742 ns/day, 0.00860807 sec/step with standard deviation 0.000108883
+ENERGY:  235000      1798.5440      9742.4797      6316.0345        64.1367         -72917.9490       274.6915         0.0000         0.0000     21923.0778         -32798.9847       310.9325    -54722.0625    -32636.9146       308.0224             10.3683         9.4062    312174.7241        -0.6803        -0.6671
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 235000
+WRITING COORDINATES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 235000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2040.38
+LDB: ============== END OF LOAD BALANCING =============== 2040.38
+LDB: =============== DONE WITH MIGRATION ================ 2040.38
+LDB: ============= START OF LOAD BALANCING ============== 2041.24
+LDB: ============== END OF LOAD BALANCING =============== 2041.24
+LDB: =============== DONE WITH MIGRATION ================ 2041.24
+TIMING: 240000  CPU: 2059.34, 0.00853056/step  Wall: 2065.69, 0.0085512/step, 0.617586 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 240000  averaging 20.0769 ns/day, 0.00860689 sec/step with standard deviation 0.000108031
+ENERGY:  240000      1751.8018      9679.0876      6277.0982        74.0765         -73218.5548       584.8796         0.0000         0.0000     21641.3409         -33210.2702       306.9366    -54851.6111    -33059.1600       308.7205            227.3677       228.3373    313755.9591        -0.2455        -0.2697
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 240000
+WRITING COORDINATES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 240000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2074.6
+LDB: ============== END OF LOAD BALANCING =============== 2074.6
+LDB: =============== DONE WITH MIGRATION ================ 2074.6
+LDB: ============= START OF LOAD BALANCING ============== 2075.45
+LDB: ============== END OF LOAD BALANCING =============== 2075.45
+LDB: =============== DONE WITH MIGRATION ================ 2075.45
+LDB: ============= START OF LOAD BALANCING ============== 2109.03
+LDB: ============== END OF LOAD BALANCING =============== 2109.03
+LDB: =============== DONE WITH MIGRATION ================ 2109.03
+LDB: ============= START OF LOAD BALANCING ============== 2109.89
+LDB: ============== END OF LOAD BALANCING =============== 2109.89
+LDB: =============== DONE WITH MIGRATION ================ 2109.89
+TIMING: 245000  CPU: 2102.24, 0.00857957/step  Wall: 2108.7, 0.00860167/step, 0.609285 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 245000  averaging 20.0772 ns/day, 0.00860678 sec/step with standard deviation 0.000106903
+ENERGY:  245000      1771.2351      9943.3558      6276.8361        78.1787         -72799.2813       212.2324         0.0000         0.0000     21797.8691         -32719.5741       309.1566    -54517.4432    -32556.8618       308.7567           -350.6416      -343.0596    313950.6804         2.9878         2.9895
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 245000
+WRITING COORDINATES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 245000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2143.33
+LDB: ============== END OF LOAD BALANCING =============== 2143.33
+LDB: =============== DONE WITH MIGRATION ================ 2143.33
+LDB: ============= START OF LOAD BALANCING ============== 2144.19
+LDB: ============== END OF LOAD BALANCING =============== 2144.19
+LDB: =============== DONE WITH MIGRATION ================ 2144.19
+TIMING: 250000  CPU: 2145.1, 0.00857238/step  Wall: 2151.68, 0.00859505/step, 0.596878 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 250000  averaging 20.0777 ns/day, 0.00860655 sec/step with standard deviation 0.000105819
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  250000      1754.2276      9781.0782      6253.1550        80.7526         -72494.2853       160.8966         0.0000         0.0000     21819.4664         -32644.7089       309.4630    -54464.1753    -32484.0541       309.3718              9.1516        11.4705    313676.7132         3.6604         3.6662
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 250000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 250000
+WRITING COORDINATES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 250000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2177.69
+LDB: ============== END OF LOAD BALANCING =============== 2177.69
+LDB: =============== DONE WITH MIGRATION ================ 2177.69
+LDB: ============= START OF LOAD BALANCING ============== 2178.54
+LDB: ============== END OF LOAD BALANCING =============== 2178.54
+LDB: =============== DONE WITH MIGRATION ================ 2178.54
+TIMING: 255000  CPU: 2188.19, 0.00861859/step  Wall: 2194.89, 0.00864161/step, 0.588109 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 255000  averaging 20.0761 ns/day, 0.00860724 sec/step with standard deviation 0.000104871
+ENERGY:  255000      1719.8381      9715.9387      6346.7654        68.2427         -72871.3630       434.5354         0.0000         0.0000     21724.0807         -32861.9621       308.1101    -54586.0427    -32698.9771       309.3569            553.0847       553.9596    311644.2007         1.7879         1.8572
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 255000
+WRITING COORDINATES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 255000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2212.49
+LDB: ============== END OF LOAD BALANCING =============== 2212.49
+LDB: =============== DONE WITH MIGRATION ================ 2212.49
+LDB: ============= START OF LOAD BALANCING ============== 2213.35
+LDB: ============== END OF LOAD BALANCING =============== 2213.35
+LDB: =============== DONE WITH MIGRATION ================ 2213.35
+TIMING: 260000  CPU: 2231.17, 0.00859587/step  Wall: 2237.98, 0.00861878/step, 0.574586 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 260000  averaging 20.0756 ns/day, 0.00860746 sec/step with standard deviation 0.00010385
+ENERGY:  260000      1765.2051      9773.7294      6282.0057        66.2735         -73045.4666       231.1428         0.0000         0.0000     22001.6060         -32925.5041       312.0462    -54927.1101    -32754.7322       309.2061            472.9135       466.4580    310468.6459         3.4160         3.3931
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 260000
+WRITING COORDINATES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 260000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2246.88
+LDB: ============== END OF LOAD BALANCING =============== 2246.88
+LDB: =============== DONE WITH MIGRATION ================ 2246.88
+LDB: ============= START OF LOAD BALANCING ============== 2247.73
+LDB: ============== END OF LOAD BALANCING =============== 2247.73
+LDB: =============== DONE WITH MIGRATION ================ 2247.74
+LDB: ============= START OF LOAD BALANCING ============== 2281.6
+LDB: ============== END OF LOAD BALANCING =============== 2281.6
+LDB: =============== DONE WITH MIGRATION ================ 2281.6
+LDB: ============= START OF LOAD BALANCING ============== 2282.46
+LDB: ============== END OF LOAD BALANCING =============== 2282.46
+LDB: =============== DONE WITH MIGRATION ================ 2282.46
+TIMING: 265000  CPU: 2274.35, 0.00863636/step  Wall: 2281.28, 0.00865965/step, 0.565283 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 265000  averaging 20.0733 ns/day, 0.00860844 sec/step with standard deviation 0.000103096
+ENERGY:  265000      1762.6131      9728.4102      6290.6176        73.1905         -72908.2473       245.6475         0.0000         0.0000     21744.8799         -33062.8885       308.4051    -54807.7684    -32894.9321       309.7733             13.7866         5.5207    312450.9626        -1.6861        -1.7762
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 265000
+WRITING COORDINATES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 265000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2315.94
+LDB: ============== END OF LOAD BALANCING =============== 2315.94
+LDB: =============== DONE WITH MIGRATION ================ 2315.94
+LDB: ============= START OF LOAD BALANCING ============== 2316.8
+LDB: ============== END OF LOAD BALANCING =============== 2316.8
+LDB: =============== DONE WITH MIGRATION ================ 2316.8
+TIMING: 270000  CPU: 2317.24, 0.00857824/step  Wall: 2324.29, 0.00860182/step, 0.549561 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 270000  averaging 20.0736 ns/day, 0.00860832 sec/step with standard deviation 0.000102123
+ENERGY:  270000      1678.3074      9864.7018      6317.0735        73.2840         -73307.7611       545.4948         0.0000         0.0000     21762.5274         -33066.3721       308.6554    -54828.8995    -32907.7933       308.6131            647.1885       632.4451    312707.5786        -0.2324        -0.1920
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 270000
+WRITING COORDINATES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 270000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2350.31
+LDB: ============== END OF LOAD BALANCING =============== 2350.31
+LDB: =============== DONE WITH MIGRATION ================ 2350.31
+LDB: ============= START OF LOAD BALANCING ============== 2351.19
+LDB: ============== END OF LOAD BALANCING =============== 2351.19
+LDB: =============== DONE WITH MIGRATION ================ 2351.19
+TIMING: 275000  CPU: 2359.97, 0.0085449/step  Wall: 2367.11, 0.00856562/step, 0.535351 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 275000  averaging 20.0754 ns/day, 0.00860754 sec/step with standard deviation 0.000101336
+ENERGY:  275000      1761.6956      9896.5220      6255.2218        59.3584         -72822.1132       232.0924         0.0000         0.0000     21975.8043         -32641.4186       311.6803    -54617.2229    -32471.9043       309.1312            132.8728       131.0873    311950.1185         0.4260         0.4380
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 275000
+WRITING COORDINATES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 275000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2384.62
+LDB: ============== END OF LOAD BALANCING =============== 2384.62
+LDB: =============== DONE WITH MIGRATION ================ 2384.62
+LDB: ============= START OF LOAD BALANCING ============== 2385.47
+LDB: ============== END OF LOAD BALANCING =============== 2385.47
+LDB: =============== DONE WITH MIGRATION ================ 2385.47
+TIMING: 280000  CPU: 2402.89, 0.00858429/step  Wall: 2410.15, 0.00860719/step, 0.525995 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 280000  averaging 20.0754 ns/day, 0.00860754 sec/step with standard deviation 0.000100411
+ENERGY:  280000      1737.5811      9841.8854      6315.3110        65.8036         -72476.1071        75.7531         0.0000         0.0000     21984.1329         -32455.6400       311.7984    -54439.7729    -32288.3832       310.6218             -4.8710         0.5343    312528.5881         1.8865         1.8745
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 280000
+WRITING COORDINATES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 280000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2419.06
+LDB: ============== END OF LOAD BALANCING =============== 2419.06
+LDB: =============== DONE WITH MIGRATION ================ 2419.06
+LDB: ============= START OF LOAD BALANCING ============== 2419.92
+LDB: ============== END OF LOAD BALANCING =============== 2419.92
+LDB: =============== DONE WITH MIGRATION ================ 2419.92
+LDB: ============= START OF LOAD BALANCING ============== 2453.81
+LDB: ============== END OF LOAD BALANCING =============== 2453.81
+LDB: =============== DONE WITH MIGRATION ================ 2453.81
+LDB: ============= START OF LOAD BALANCING ============== 2454.67
+LDB: ============== END OF LOAD BALANCING =============== 2454.67
+LDB: =============== DONE WITH MIGRATION ================ 2454.67
+TIMING: 285000  CPU: 2446.06, 0.00863421/step  Wall: 2453.46, 0.00866183/step, 0.517304 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 285000  averaging 20.0732 ns/day, 0.00860849 sec/step with standard deviation 9.97698e-05
+ENERGY:  285000      1767.1222      9729.2435      6310.2849        82.0678         -72881.4907       355.6568         0.0000         0.0000     21859.2013         -32777.9142       310.0265    -54637.1155    -32599.6962       310.5575           -103.0614      -110.0110    314252.3578         0.7420         0.7277
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 285000
+WRITING COORDINATES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 285000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2488.08
+LDB: ============== END OF LOAD BALANCING =============== 2488.08
+LDB: =============== DONE WITH MIGRATION ================ 2488.08
+LDB: ============= START OF LOAD BALANCING ============== 2488.96
+LDB: ============== END OF LOAD BALANCING =============== 2488.96
+LDB: =============== DONE WITH MIGRATION ================ 2488.96
+TIMING: 290000  CPU: 2488.85, 0.008558/step  Wall: 2496.35, 0.00857892/step, 0.500437 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 290000  averaging 20.0744 ns/day, 0.00860798 sec/step with standard deviation 9.8967e-05
+ENERGY:  290000      1758.9620      9791.8954      6345.5077        68.7228         -72912.8989       348.3156         0.0000         0.0000     21815.4059         -32784.0895       309.4054    -54599.4954    -32617.4971       309.7677             -2.3046        -3.1159    313804.0466         0.2743         0.2985
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 290000
+WRITING COORDINATES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 290000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2522.39
+LDB: ============== END OF LOAD BALANCING =============== 2522.39
+LDB: =============== DONE WITH MIGRATION ================ 2522.39
+LDB: ============= START OF LOAD BALANCING ============== 2523.26
+LDB: ============== END OF LOAD BALANCING =============== 2523.26
+LDB: =============== DONE WITH MIGRATION ================ 2523.26
+TIMING: 295000  CPU: 2531.57, 0.00854383/step  Wall: 2539.18, 0.0085646/step, 0.487707 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 295000  averaging 20.0761 ns/day, 0.00860724 sec/step with standard deviation 9.82725e-05
+ENERGY:  295000      1771.4084      9728.7192      6304.7701        76.0014         -72776.9260       356.8714         0.0000         0.0000     21701.7800         -32837.3754       307.7938    -54539.1554    -32671.6915       310.3003             35.0049        37.6782    313031.1918         1.5413         1.5707
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 295000
+WRITING COORDINATES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 295000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2556.63
+LDB: ============== END OF LOAD BALANCING =============== 2556.63
+LDB: =============== DONE WITH MIGRATION ================ 2556.63
+LDB: ============= START OF LOAD BALANCING ============== 2557.49
+LDB: ============== END OF LOAD BALANCING =============== 2557.49
+LDB: =============== DONE WITH MIGRATION ================ 2557.49
+TIMING: 300000  CPU: 2574.51, 0.00858897/step  Wall: 2582.23, 0.00861028/step, 0.478349 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 300000  averaging 20.076 ns/day, 0.0086073 sec/step with standard deviation 9.74369e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  300000      1726.4623      9772.8588      6308.4747        74.3847         -72997.0263       272.2432         0.0000         0.0000     21849.7014         -32992.9012       309.8918    -54842.6026    -32824.7825       308.9208            118.3390       122.7654    312580.4481         2.7559         2.7342
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 300000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 300000
+WRITING COORDINATES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 300000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2591.14
+LDB: ============== END OF LOAD BALANCING =============== 2591.14
+LDB: =============== DONE WITH MIGRATION ================ 2591.14
+LDB: ============= START OF LOAD BALANCING ============== 2592
+LDB: ============== END OF LOAD BALANCING =============== 2592
+LDB: =============== DONE WITH MIGRATION ================ 2592
+LDB: ============= START OF LOAD BALANCING ============== 2625.4
+LDB: ============== END OF LOAD BALANCING =============== 2625.4
+LDB: =============== DONE WITH MIGRATION ================ 2625.4
+LDB: ============= START OF LOAD BALANCING ============== 2626.26
+LDB: ============== END OF LOAD BALANCING =============== 2626.26
+LDB: =============== DONE WITH MIGRATION ================ 2626.26
+TIMING: 305000  CPU: 2617.24, 0.00854601/step  Wall: 2625.06, 0.00856651/step, 0.464019 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 305000  averaging 20.0776 ns/day, 0.00860663 sec/step with standard deviation 9.67625e-05
+ENERGY:  305000      1718.0430      9676.3890      6299.1737        77.3566         -72954.5323       307.7961         0.0000         0.0000     21797.2350         -33078.5388       309.1476    -54875.7738    -32909.5856       309.1310             84.0865        75.1381    312836.6821        -0.1145        -0.1431
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 305000
+WRITING COORDINATES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 305000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2659.64
+LDB: ============== END OF LOAD BALANCING =============== 2659.64
+LDB: =============== DONE WITH MIGRATION ================ 2659.64
+LDB: ============= START OF LOAD BALANCING ============== 2660.5
+LDB: ============== END OF LOAD BALANCING =============== 2660.5
+LDB: =============== DONE WITH MIGRATION ================ 2660.5
+TIMING: 310000  CPU: 2659.92, 0.00853506/step  Wall: 2667.84, 0.00855542/step, 0.451536 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 310000  averaging 20.0795 ns/day, 0.0086058 sec/step with standard deviation 9.61863e-05
+ENERGY:  310000      1760.8244      9822.8196      6388.2495        63.4921         -72823.1965       139.4277         0.0000         0.0000     21683.6184         -32964.7649       307.5362    -54648.3833    -32798.0958       308.8798           -229.6867      -228.9336    312822.6893         3.5143         3.4223
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 310000
+WRITING COORDINATES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 310000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2693.84
+LDB: ============== END OF LOAD BALANCING =============== 2693.84
+LDB: =============== DONE WITH MIGRATION ================ 2693.84
+LDB: ============= START OF LOAD BALANCING ============== 2694.7
+LDB: ============== END OF LOAD BALANCING =============== 2694.7
+LDB: =============== DONE WITH MIGRATION ================ 2694.7
+TIMING: 315000  CPU: 2702.86, 0.00858871/step  Wall: 2710.89, 0.00861005/step, 0.442461 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 315000  averaging 20.0793 ns/day, 0.00860587 sec/step with standard deviation 9.54089e-05
+ENERGY:  315000      1689.8686      9964.9837      6286.2797        74.1669         -72796.0433       259.8264         0.0000         0.0000     21887.7591         -32633.1588       310.4315    -54520.9179    -32468.8890       310.4622            381.3534       372.0864    311875.4102        -1.9072        -1.8862
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 315000
+WRITING COORDINATES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 315000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2728.34
+LDB: ============== END OF LOAD BALANCING =============== 2728.34
+LDB: =============== DONE WITH MIGRATION ================ 2728.34
+LDB: ============= START OF LOAD BALANCING ============== 2729.2
+LDB: ============== END OF LOAD BALANCING =============== 2729.2
+LDB: =============== DONE WITH MIGRATION ================ 2729.2
+TIMING: 320000  CPU: 2746.25, 0.0086765/step  Wall: 2754.4, 0.00870169/step, 0.435084 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 320000  averaging 20.0758 ns/day, 0.00860737 sec/step with standard deviation 9.54035e-05
+ENERGY:  320000      1689.7173      9842.3741      6284.1035        68.8871         -72656.5577        23.3681         0.0000         0.0000     21631.4387         -33116.6690       306.7962    -54748.1077    -32944.7466       308.8381           -365.3926      -353.9816    312113.4802         2.7964         2.7902
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 320000
+WRITING COORDINATES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 320000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2763.43
+LDB: ============== END OF LOAD BALANCING =============== 2763.43
+LDB: =============== DONE WITH MIGRATION ================ 2763.43
+LDB: ============= START OF LOAD BALANCING ============== 2764.33
+LDB: ============== END OF LOAD BALANCING =============== 2764.33
+LDB: =============== DONE WITH MIGRATION ================ 2764.33
+LDB: ============= START OF LOAD BALANCING ============== 2798.07
+LDB: ============== END OF LOAD BALANCING =============== 2798.07
+LDB: =============== DONE WITH MIGRATION ================ 2798.07
+LDB: ============= START OF LOAD BALANCING ============== 2798.93
+LDB: ============== END OF LOAD BALANCING =============== 2798.93
+LDB: =============== DONE WITH MIGRATION ================ 2798.93
+TIMING: 325000  CPU: 2789.46, 0.00864259/step  Wall: 2797.72, 0.00866494/step, 0.421213 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 325000  averaging 20.0738 ns/day, 0.00860825 sec/step with standard deviation 9.49242e-05
+ENERGY:  325000      1723.8024      9899.2161      6221.0024        72.1920         -73201.3243       358.5547         0.0000         0.0000     21753.9720         -33172.5847       308.5341    -54926.5568    -33010.6638       308.3250             93.2659        91.2075    311411.2701         2.5636         2.5545
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 325000
+WRITING COORDINATES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 325000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2832.49
+LDB: ============== END OF LOAD BALANCING =============== 2832.49
+LDB: =============== DONE WITH MIGRATION ================ 2832.49
+LDB: ============= START OF LOAD BALANCING ============== 2833.34
+LDB: ============== END OF LOAD BALANCING =============== 2833.34
+LDB: =============== DONE WITH MIGRATION ================ 2833.34
+TIMING: 330000  CPU: 2832.49, 0.00860713/step  Wall: 2840.87, 0.00862956/step, 0.407507 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 330000  averaging 20.073 ns/day, 0.00860857 sec/step with standard deviation 9.42277e-05
+ENERGY:  330000      1747.1551      9662.5110      6309.8442        66.2965         -72680.4738        76.8611         0.0000         0.0000     21897.1330         -32920.6730       310.5645    -54817.8060    -32759.6938       309.2191           -485.9379      -490.1095    313695.4070         1.6581         1.6541
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 330000
+WRITING COORDINATES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 330000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2866.92
+LDB: ============== END OF LOAD BALANCING =============== 2866.92
+LDB: =============== DONE WITH MIGRATION ================ 2866.92
+LDB: ============= START OF LOAD BALANCING ============== 2867.77
+LDB: ============== END OF LOAD BALANCING =============== 2867.77
+LDB: =============== DONE WITH MIGRATION ================ 2867.77
+TIMING: 335000  CPU: 2875.21, 0.00854328/step  Wall: 2883.69, 0.00856392/step, 0.392513 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 335000  averaging 20.0746 ns/day, 0.00860791 sec/step with standard deviation 9.36702e-05
+ENERGY:  335000      1704.6561      9772.9257      6262.6277        69.3076         -72664.9439       156.6409         0.0000         0.0000     21902.1314         -32796.6545       310.6354    -54698.7858    -32627.8072       309.2585           -274.5208      -270.1976    312033.3924         4.2328         4.2089
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 335000
+WRITING COORDINATES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 335000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2901.16
+LDB: ============== END OF LOAD BALANCING =============== 2901.16
+LDB: =============== DONE WITH MIGRATION ================ 2901.16
+LDB: ============= START OF LOAD BALANCING ============== 2902.02
+LDB: ============== END OF LOAD BALANCING =============== 2902.02
+LDB: =============== DONE WITH MIGRATION ================ 2902.02
+TIMING: 340000  CPU: 2917.95, 0.0085478/step  Wall: 2926.53, 0.00856848/step, 0.380821 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 340000  averaging 20.0759 ns/day, 0.00860733 sec/step with standard deviation 9.30914e-05
+ENERGY:  340000      1753.8165      9891.1265      6263.9002        71.4904         -72893.8023       360.7611         0.0000         0.0000     21926.1389         -32626.5687       310.9759    -54552.7076    -32460.6390       309.2119            196.3589       190.8186    311578.2181         1.0601         1.0362
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 340000
+WRITING COORDINATES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 340000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 2935.43
+LDB: ============== END OF LOAD BALANCING =============== 2935.43
+LDB: =============== DONE WITH MIGRATION ================ 2935.43
+LDB: ============= START OF LOAD BALANCING ============== 2936.29
+LDB: ============== END OF LOAD BALANCING =============== 2936.29
+LDB: =============== DONE WITH MIGRATION ================ 2936.29
+LDB: ============= START OF LOAD BALANCING ============== 2969.69
+LDB: ============== END OF LOAD BALANCING =============== 2969.69
+LDB: =============== DONE WITH MIGRATION ================ 2969.7
+LDB: ============= START OF LOAD BALANCING ============== 2970.55
+LDB: ============== END OF LOAD BALANCING =============== 2970.55
+LDB: =============== DONE WITH MIGRATION ================ 2970.55
+TIMING: 345000  CPU: 2960.67, 0.00854342/step  Wall: 2969.35, 0.00856384/step, 0.368721 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 345000  averaging 20.0774 ns/day, 0.0086067 sec/step with standard deviation 9.25525e-05
+ENERGY:  345000      1730.9328      9905.3984      6304.6919        66.4320         -72742.8213       301.2812         0.0000         0.0000     21880.4519         -32553.6330       310.3279    -54434.0849    -32386.1896       309.1801            -49.3400       -56.5627    312703.8074        -0.1436        -0.1533
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 345000
+WRITING COORDINATES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 345000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3003.93
+LDB: ============== END OF LOAD BALANCING =============== 3003.93
+LDB: =============== DONE WITH MIGRATION ================ 3003.93
+LDB: ============= START OF LOAD BALANCING ============== 3004.78
+LDB: ============== END OF LOAD BALANCING =============== 3004.78
+LDB: =============== DONE WITH MIGRATION ================ 3004.78
+TIMING: 350000  CPU: 3003.5, 0.00856693/step  Wall: 3012.29, 0.00858791/step, 0.35783 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 350000  averaging 20.078 ns/day, 0.00860643 sec/step with standard deviation 9.19068e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  350000      1734.8685      9887.7135      6328.9008        65.6079         -72797.4351       313.8622         0.0000         0.0000     21930.1297         -32536.3526       311.0325    -54466.4823    -32373.0805       309.6945           -167.3666      -169.6258    314101.8448         1.3916         1.4170
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 350000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 350000
+WRITING COORDINATES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 350000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3038.27
+LDB: ============== END OF LOAD BALANCING =============== 3038.27
+LDB: =============== DONE WITH MIGRATION ================ 3038.27
+LDB: ============= START OF LOAD BALANCING ============== 3039.12
+LDB: ============== END OF LOAD BALANCING =============== 3039.12
+LDB: =============== DONE WITH MIGRATION ================ 3039.12
+TIMING: 355000  CPU: 3046.1, 0.00852019/step  Wall: 3054.99, 0.00854097/step, 0.344011 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 355000  averaging 20.0802 ns/day, 0.00860551 sec/step with standard deviation 9.15781e-05
+ENERGY:  355000      1736.2300      9752.5016      6329.5140        70.0878         -73062.4949       411.3659         0.0000         0.0000     21858.9260         -32903.8695       310.0226    -54762.7955    -32739.9879       308.8974            134.1167       128.3602    310973.6976         1.0615         1.0649
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 355000
+WRITING COORDINATES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 355000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3072.66
+LDB: ============== END OF LOAD BALANCING =============== 3072.66
+LDB: =============== DONE WITH MIGRATION ================ 3072.66
+LDB: ============= START OF LOAD BALANCING ============== 3073.56
+LDB: ============== END OF LOAD BALANCING =============== 3073.56
+LDB: =============== DONE WITH MIGRATION ================ 3073.56
+TIMING: 360000  CPU: 3089.43, 0.00866497/step  Wall: 3098.45, 0.00869128/step, 0.337994 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 360000  averaging 20.0774 ns/day, 0.0086067 sec/step with standard deviation 9.1491e-05
+ENERGY:  360000      1738.2242      9942.7803      6320.0371        57.4118         -72759.0905       346.1623         0.0000         0.0000     21657.8328         -32696.6420       307.1705    -54354.4748    -32531.5501       309.4709            296.4988       287.6299    313166.7614         2.2362         2.2397
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 360000
+WRITING COORDINATES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 360000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3107.37
+LDB: ============== END OF LOAD BALANCING =============== 3107.37
+LDB: =============== DONE WITH MIGRATION ================ 3107.37
+LDB: ============= START OF LOAD BALANCING ============== 3108.22
+LDB: ============== END OF LOAD BALANCING =============== 3108.22
+LDB: =============== DONE WITH MIGRATION ================ 3108.22
+LDB: ============= START OF LOAD BALANCING ============== 3141.8
+LDB: ============== END OF LOAD BALANCING =============== 3141.8
+LDB: =============== DONE WITH MIGRATION ================ 3141.8
+LDB: ============= START OF LOAD BALANCING ============== 3142.65
+LDB: ============== END OF LOAD BALANCING =============== 3142.65
+LDB: =============== DONE WITH MIGRATION ================ 3142.65
+TIMING: 365000  CPU: 3132.31, 0.00857718/step  Wall: 3141.45, 0.00860002/step, 0.322501 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 365000  averaging 20.0776 ns/day, 0.00860661 sec/step with standard deviation 9.08568e-05
+ENERGY:  365000      1683.6798      9749.8149      6302.9501        69.8266         -72874.1233       267.1980         0.0000         0.0000     21838.5374         -32962.1165       309.7334    -54800.6539    -32792.4482       309.5850           -295.6002      -292.6068    313058.2756         1.9267         1.9631
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 365000
+WRITING COORDINATES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 365000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3176.61
+LDB: ============== END OF LOAD BALANCING =============== 3176.61
+LDB: =============== DONE WITH MIGRATION ================ 3176.61
+LDB: ============= START OF LOAD BALANCING ============== 3177.47
+LDB: ============== END OF LOAD BALANCING =============== 3177.47
+LDB: =============== DONE WITH MIGRATION ================ 3177.47
+TIMING: 370000  CPU: 3175.78, 0.00869298/step  Wall: 3185.07, 0.00872357/step, 0.315018 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 370000  averaging 20.0739 ns/day, 0.00860819 sec/step with standard deviation 9.1251e-05
+ENERGY:  370000      1679.2802      9769.7376      6304.3244        72.0611         -72899.0246       225.7327         0.0000         0.0000     21781.4488         -33066.4399       308.9238    -54847.8887    -32906.6685       308.0424             59.1688        65.8704    312790.0619         2.7024         2.7650
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 370000
+WRITING COORDINATES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 370000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3211.21
+LDB: ============== END OF LOAD BALANCING =============== 3211.21
+LDB: =============== DONE WITH MIGRATION ================ 3211.21
+LDB: ============= START OF LOAD BALANCING ============== 3212.07
+LDB: ============== END OF LOAD BALANCING =============== 3212.07
+LDB: =============== DONE WITH MIGRATION ================ 3212.07
+TIMING: 375000  CPU: 3218.64, 0.00857172/step  Wall: 3228.04, 0.00859469/step, 0.298427 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 375000  averaging 20.0743 ns/day, 0.00860801 sec/step with standard deviation 9.06457e-05
+ENERGY:  375000      1758.0293      9710.3798      6343.9763        64.0935         -72873.2095       323.1400         0.0000         0.0000     21615.8676         -33057.7230       306.5753    -54673.5907    -32895.8596       309.3862           -186.3516      -169.4337    312500.8302         1.0924         1.0925
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 375000
+WRITING COORDINATES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 375000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3245.53
+LDB: ============== END OF LOAD BALANCING =============== 3245.53
+LDB: =============== DONE WITH MIGRATION ================ 3245.53
+LDB: ============= START OF LOAD BALANCING ============== 3246.39
+LDB: ============== END OF LOAD BALANCING =============== 3246.39
+LDB: =============== DONE WITH MIGRATION ================ 3246.39
+TIMING: 380000  CPU: 3261.38, 0.00854878/step  Wall: 3270.9, 0.00857162/step, 0.285721 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 380000  averaging 20.0754 ns/day, 0.00860753 sec/step with standard deviation 9.01361e-05
+ENERGY:  380000      1711.9489      9760.2186      6334.7139        71.5194         -73316.2723       536.8887         0.0000         0.0000     21887.3678         -33013.6151       310.4260    -54900.9829    -32845.7157       309.1672           -138.2855      -142.8510    312476.3073         0.2939         0.3187
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 380000
+WRITING COORDINATES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 380000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3279.81
+LDB: ============== END OF LOAD BALANCING =============== 3279.81
+LDB: =============== DONE WITH MIGRATION ================ 3279.81
+LDB: ============= START OF LOAD BALANCING ============== 3280.67
+LDB: ============== END OF LOAD BALANCING =============== 3280.67
+LDB: =============== DONE WITH MIGRATION ================ 3280.67
+LDB: ============= START OF LOAD BALANCING ============== 3314.24
+LDB: ============== END OF LOAD BALANCING =============== 3314.24
+LDB: =============== DONE WITH MIGRATION ================ 3314.24
+LDB: ============= START OF LOAD BALANCING ============== 3315.1
+LDB: ============== END OF LOAD BALANCING =============== 3315.1
+LDB: =============== DONE WITH MIGRATION ================ 3315.1
+TIMING: 385000  CPU: 3304.31, 0.00858499/step  Wall: 3313.94, 0.00860741/step, 0.274959 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 385000  averaging 20.0755 ns/day, 0.00860753 sec/step with standard deviation 8.95411e-05
+ENERGY:  385000      1796.0101      9893.1046      6355.2921        62.4588         -72560.7080        90.1161         0.0000         0.0000     21792.6449         -32571.0814       309.0825    -54363.7263    -32406.2486       309.8632           -238.0591      -240.8508    312312.2010        -1.9913        -1.9423
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 385000
+WRITING COORDINATES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 385000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3348.49
+LDB: ============== END OF LOAD BALANCING =============== 3348.49
+LDB: =============== DONE WITH MIGRATION ================ 3348.49
+LDB: ============= START OF LOAD BALANCING ============== 3349.34
+LDB: ============== END OF LOAD BALANCING =============== 3349.34
+LDB: =============== DONE WITH MIGRATION ================ 3349.34
+TIMING: 390000  CPU: 3347, 0.0085393/step  Wall: 3356.74, 0.00856034/step, 0.261566 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 390000  averaging 20.0769 ns/day, 0.00860692 sec/step with standard deviation 8.91181e-05
+ENERGY:  390000      1723.4049      9847.1073      6313.2578        75.1894         -72911.5204       116.0694         0.0000         0.0000     21757.7275         -33078.7641       308.5873    -54836.4916    -32915.7640       307.8325           -652.6634      -648.3898    312592.5111        -1.0025        -1.0048
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 390000
+WRITING COORDINATES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 390000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3382.92
+LDB: ============== END OF LOAD BALANCING =============== 3382.92
+LDB: =============== DONE WITH MIGRATION ================ 3382.92
+LDB: ============= START OF LOAD BALANCING ============== 3383.78
+LDB: ============== END OF LOAD BALANCING =============== 3383.78
+LDB: =============== DONE WITH MIGRATION ================ 3383.78
+TIMING: 395000  CPU: 3389.91, 0.00858214/step  Wall: 3399.76, 0.00860464/step, 0.250969 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 395000  averaging 20.0769 ns/day, 0.00860689 sec/step with standard deviation 8.85454e-05
+ENERGY:  395000      1847.4272      9783.4777      6369.3484        64.4713         -72704.8619        62.6882         0.0000         0.0000     21884.7571         -32692.6919       310.3890    -54577.4491    -32521.7080       309.8996           -207.0136      -210.4161    311977.0301         0.4121         0.4380
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 395000
+WRITING COORDINATES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 395000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3417.28
+LDB: ============== END OF LOAD BALANCING =============== 3417.28
+LDB: =============== DONE WITH MIGRATION ================ 3417.28
+LDB: ============= START OF LOAD BALANCING ============== 3418.14
+LDB: ============== END OF LOAD BALANCING =============== 3418.14
+LDB: =============== DONE WITH MIGRATION ================ 3418.14
+TIMING: 400000  CPU: 3432.82, 0.00858173/step  Wall: 3442.78, 0.00860426/step, 0.239007 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 400000  averaging 20.077 ns/day, 0.00860686 sec/step with standard deviation 8.79836e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  400000      1870.9167      9923.4399      6292.0119        69.6104         -72991.2662       280.1825         0.0000         0.0000     21677.3859         -32877.7189       307.4478    -54555.1048    -32713.2653       308.6736           -758.4522      -753.4693    312884.4629         0.1722         0.2171
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 400000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 400000
+WRITING COORDINATES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 400000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3451.7
+LDB: ============== END OF LOAD BALANCING =============== 3451.7
+LDB: =============== DONE WITH MIGRATION ================ 3451.7
+LDB: ============= START OF LOAD BALANCING ============== 3452.56
+LDB: ============== END OF LOAD BALANCING =============== 3452.56
+LDB: =============== DONE WITH MIGRATION ================ 3452.56
+LDB: ============= START OF LOAD BALANCING ============== 3486.13
+LDB: ============== END OF LOAD BALANCING =============== 3486.13
+LDB: =============== DONE WITH MIGRATION ================ 3486.13
+LDB: ============= START OF LOAD BALANCING ============== 3486.98
+LDB: ============== END OF LOAD BALANCING =============== 3486.98
+LDB: =============== DONE WITH MIGRATION ================ 3486.98
+TIMING: 405000  CPU: 3475.72, 0.00858009/step  Wall: 3485.79, 0.008601/step, 0.226971 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 405000  averaging 20.0772 ns/day, 0.00860679 sec/step with standard deviation 8.74344e-05
+ENERGY:  405000      1751.6349      9738.1383      6336.8446        73.6958         -72780.4716       346.4044         0.0000         0.0000     21957.2035         -32576.5501       311.4165    -54533.7537    -32405.5656       309.0436            -56.8024       -49.7672    313431.6937         3.1174         3.1316
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 405000
+WRITING COORDINATES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 405000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3520.51
+LDB: ============== END OF LOAD BALANCING =============== 3520.51
+LDB: =============== DONE WITH MIGRATION ================ 3520.51
+LDB: ============= START OF LOAD BALANCING ============== 3521.38
+LDB: ============== END OF LOAD BALANCING =============== 3521.38
+LDB: =============== DONE WITH MIGRATION ================ 3521.38
+TIMING: 410000  CPU: 3518.58, 0.00857191/step  Wall: 3528.76, 0.00859473/step, 0.214868 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 410000  averaging 20.0775 ns/day, 0.00860664 sec/step with standard deviation 8.69033e-05
+ENERGY:  410000      1721.5424      9796.4330      6341.8111        76.8210         -72628.7363       176.3296         0.0000         0.0000     21785.2954         -32730.5038       308.9783    -54515.7992    -32572.4295       308.8995           -275.8402      -281.3836    312668.0793         5.6685         5.6486
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 410000
+WRITING COORDINATES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 410000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3554.82
+LDB: ============== END OF LOAD BALANCING =============== 3554.82
+LDB: =============== DONE WITH MIGRATION ================ 3554.82
+LDB: ============= START OF LOAD BALANCING ============== 3555.67
+LDB: ============== END OF LOAD BALANCING =============== 3555.67
+LDB: =============== DONE WITH MIGRATION ================ 3555.67
+TIMING: 415000  CPU: 3561.33, 0.00854943/step  Wall: 3571.62, 0.00857202/step, 0.202395 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 415000  averaging 20.0785 ns/day, 0.00860622 sec/step with standard deviation 8.64553e-05
+ENERGY:  415000      1787.7493      9886.9464      6349.1961        75.2265         -73025.9699       344.2931         0.0000         0.0000     21786.1729         -32796.3856       308.9908    -54582.5585    -32631.5973       310.1669            101.1200       106.1032    312444.3173         1.6934         1.6816
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 415000
+WRITING COORDINATES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 415000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3589.1
+LDB: ============== END OF LOAD BALANCING =============== 3589.1
+LDB: =============== DONE WITH MIGRATION ================ 3589.1
+LDB: ============= START OF LOAD BALANCING ============== 3589.95
+LDB: ============== END OF LOAD BALANCING =============== 3589.95
+LDB: =============== DONE WITH MIGRATION ================ 3589.95
+TIMING: 420000  CPU: 3604.15, 0.0085642/step  Wall: 3614.56, 0.00858699/step, 0.190822 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 420000  averaging 20.079 ns/day, 0.008606 sec/step with standard deviation 8.59585e-05
+ENERGY:  420000      1761.4926      9871.2168      6300.7664        67.8324         -72786.1577       283.8981         0.0000         0.0000     21663.6242         -32837.3273       307.2527    -54500.9515    -32674.3880       309.0415             62.2785        51.9462    313750.5329         1.6728         1.6183
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 420000
+WRITING COORDINATES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 420000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3623.46
+LDB: ============== END OF LOAD BALANCING =============== 3623.46
+LDB: =============== DONE WITH MIGRATION ================ 3623.46
+LDB: ============= START OF LOAD BALANCING ============== 3624.31
+LDB: ============== END OF LOAD BALANCING =============== 3624.31
+LDB: =============== DONE WITH MIGRATION ================ 3624.31
+LDB: ============= START OF LOAD BALANCING ============== 3657.65
+LDB: ============== END OF LOAD BALANCING =============== 3657.65
+LDB: =============== DONE WITH MIGRATION ================ 3657.65
+LDB: ============= START OF LOAD BALANCING ============== 3658.51
+LDB: ============== END OF LOAD BALANCING =============== 3658.51
+LDB: =============== DONE WITH MIGRATION ================ 3658.51
+TIMING: 425000  CPU: 3646.79, 0.00852835/step  Wall: 3657.3, 0.00854884/step, 0.178101 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 425000  averaging 20.0806 ns/day, 0.00860532 sec/step with standard deviation 8.56699e-05
+ENERGY:  425000      1720.6224      9730.3338      6328.4844        74.4944         -72983.3036       492.1376         0.0000         0.0000     21760.9057         -32876.3253       308.6324    -54637.2310    -32714.8046       309.5087            558.7145       562.7117    312016.7567        -1.3518        -1.3079
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 425000
+WRITING COORDINATES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 425000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3692.09
+LDB: ============== END OF LOAD BALANCING =============== 3692.09
+LDB: =============== DONE WITH MIGRATION ================ 3692.09
+LDB: ============= START OF LOAD BALANCING ============== 3692.95
+LDB: ============== END OF LOAD BALANCING =============== 3692.95
+LDB: =============== DONE WITH MIGRATION ================ 3692.95
+TIMING: 430000  CPU: 3689.82, 0.00860499/step  Wall: 3700.44, 0.0086267/step, 0.167741 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 430000  averaging 20.08 ns/day, 0.00860557 sec/step with standard deviation 8.51957e-05
+ENERGY:  430000      1714.4658      9717.8112      6244.3513        75.2557         -73085.4878       415.1945         0.0000         0.0000     22084.6913         -32833.7180       313.2246    -54918.4093    -32663.9329       308.6956           -197.3551      -202.2566    313045.9678         0.7204         0.7145
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 430000
+WRITING COORDINATES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 430000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3726.55
+LDB: ============== END OF LOAD BALANCING =============== 3726.55
+LDB: =============== DONE WITH MIGRATION ================ 3726.55
+LDB: ============= START OF LOAD BALANCING ============== 3727.41
+LDB: ============== END OF LOAD BALANCING =============== 3727.41
+LDB: =============== DONE WITH MIGRATION ================ 3727.41
+TIMING: 435000  CPU: 3732.75, 0.0085866/step  Wall: 3743.48, 0.00860818/step, 0.155425 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 435000  averaging 20.0799 ns/day, 0.0086056 sec/step with standard deviation 8.46994e-05
+ENERGY:  435000      1760.2355      9735.3566      6267.3875        78.3094         -72823.2129       364.1749         0.0000         0.0000     22103.4226         -32514.3264       313.4903    -54617.7490    -32339.7172       310.0429           -210.5497      -210.5454    314196.4434        -1.0738        -1.0064
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 435000
+WRITING COORDINATES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 435000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3760.91
+LDB: ============== END OF LOAD BALANCING =============== 3760.91
+LDB: =============== DONE WITH MIGRATION ================ 3760.91
+LDB: ============= START OF LOAD BALANCING ============== 3761.76
+LDB: ============== END OF LOAD BALANCING =============== 3761.76
+LDB: =============== DONE WITH MIGRATION ================ 3761.76
+TIMING: 440000  CPU: 3775.37, 0.00852424/step  Wall: 3786.2, 0.00854534/step, 0.142422 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 440000  averaging 20.0815 ns/day, 0.00860492 sec/step with standard deviation 8.44558e-05
+ENERGY:  440000      1723.3784      9822.7967      6313.8575        60.4047         -73074.1506       440.5891         0.0000         0.0000     21857.7459         -32855.3783       310.0059    -54713.1242    -32685.6517       309.9639            326.6531       317.3409    313833.1021         2.9745         2.9665
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 440000
+WRITING COORDINATES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 440000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3795.11
+LDB: ============== END OF LOAD BALANCING =============== 3795.11
+LDB: =============== DONE WITH MIGRATION ================ 3795.11
+LDB: ============= START OF LOAD BALANCING ============== 3795.97
+LDB: ============== END OF LOAD BALANCING =============== 3795.97
+LDB: =============== DONE WITH MIGRATION ================ 3795.97
+LDB: ============= START OF LOAD BALANCING ============== 3829.52
+LDB: ============== END OF LOAD BALANCING =============== 3829.52
+LDB: =============== DONE WITH MIGRATION ================ 3829.52
+LDB: ============= START OF LOAD BALANCING ============== 3830.38
+LDB: ============== END OF LOAD BALANCING =============== 3830.38
+LDB: =============== DONE WITH MIGRATION ================ 3830.38
+TIMING: 445000  CPU: 3818.25, 0.00857547/step  Wall: 3829.2, 0.00859842/step, 0.131365 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 445000  averaging 20.0817 ns/day, 0.00860484 sec/step with standard deviation 8.39774e-05
+ENERGY:  445000      1756.7096      9743.7351      6282.1134        70.5224         -73237.4074       630.3737         0.0000         0.0000     21951.3588         -32802.5944       311.3336    -54753.9532    -32638.7855       310.0070            625.3024       623.3353    312249.7564         1.2307         1.2376
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 445000
+WRITING COORDINATES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 445000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3863.81
+LDB: ============== END OF LOAD BALANCING =============== 3863.81
+LDB: =============== DONE WITH MIGRATION ================ 3863.81
+LDB: ============= START OF LOAD BALANCING ============== 3864.67
+LDB: ============== END OF LOAD BALANCING =============== 3864.67
+LDB: =============== DONE WITH MIGRATION ================ 3864.67
+TIMING: 450000  CPU: 3861.26, 0.00860138/step  Wall: 3872.32, 0.00862404/step, 0.119778 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 450000  averaging 20.0812 ns/day, 0.00860506 sec/step with standard deviation 8.35288e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  450000      1729.9687      9838.0128      6283.4455        61.5540         -72669.2513       180.7220         0.0000         0.0000     21727.8283         -32847.7200       308.1633    -54575.5483    -32687.6831       309.8618           -179.8261      -167.9580    312674.3166        -0.5748        -0.5635
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 450000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 450000
+WRITING COORDINATES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 450000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3898.47
+LDB: ============== END OF LOAD BALANCING =============== 3898.47
+LDB: =============== DONE WITH MIGRATION ================ 3898.47
+LDB: ============= START OF LOAD BALANCING ============== 3899.32
+LDB: ============== END OF LOAD BALANCING =============== 3899.32
+LDB: =============== DONE WITH MIGRATION ================ 3899.32
+TIMING: 455000  CPU: 3904.08, 0.0085656/step  Wall: 3915.25, 0.00858632/step, 0.107329 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 455000  averaging 20.0817 ns/day, 0.00860485 sec/step with standard deviation 8.30867e-05
+ENERGY:  455000      1745.8995      9912.2691      6277.4935        63.8889         -73247.0359       487.0988         0.0000         0.0000     21871.3085         -32889.0776       310.1982    -54760.3860    -32720.3142       309.3357            186.8925       178.9193    313784.7696         1.6654         1.7025
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 455000
+WRITING COORDINATES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 455000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3932.84
+LDB: ============== END OF LOAD BALANCING =============== 3932.84
+LDB: =============== DONE WITH MIGRATION ================ 3932.84
+LDB: ============= START OF LOAD BALANCING ============== 3933.69
+LDB: ============== END OF LOAD BALANCING =============== 3933.69
+LDB: =============== DONE WITH MIGRATION ================ 3933.69
+TIMING: 460000  CPU: 3947, 0.00858387/step  Wall: 3958.29, 0.00860783/step, 0.0956425 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 460000  averaging 20.0816 ns/day, 0.00860488 sec/step with standard deviation 8.26295e-05
+ENERGY:  460000      1797.4914      9746.4241      6332.3495        56.7453         -73002.3546       317.4180         0.0000         0.0000     21663.2060         -33088.7203       307.2467    -54751.9263    -32923.3834       308.7517           -555.2451      -554.9467    313725.3874         1.6039         1.5747
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 460000
+WRITING COORDINATES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 460000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 3967.21
+LDB: ============== END OF LOAD BALANCING =============== 3967.21
+LDB: =============== DONE WITH MIGRATION ================ 3967.21
+LDB: ============= START OF LOAD BALANCING ============== 3968.07
+LDB: ============== END OF LOAD BALANCING =============== 3968.07
+LDB: =============== DONE WITH MIGRATION ================ 3968.07
+LDB: ============= START OF LOAD BALANCING ============== 4001.67
+LDB: ============== END OF LOAD BALANCING =============== 4001.67
+LDB: =============== DONE WITH MIGRATION ================ 4001.67
+LDB: ============= START OF LOAD BALANCING ============== 4002.53
+LDB: ============== END OF LOAD BALANCING =============== 4002.53
+LDB: =============== DONE WITH MIGRATION ================ 4002.53
+TIMING: 465000  CPU: 3989.94, 0.00858716/step  Wall: 4001.34, 0.00860989/step, 0.0837073 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 465000  averaging 20.0815 ns/day, 0.00860494 sec/step with standard deviation 8.21808e-05
+ENERGY:  465000      1701.3696      9833.0500      6308.4612        68.2268         -73105.7807       562.4971         0.0000         0.0000     21741.2912         -32890.8848       308.3542    -54632.1759    -32721.5363       309.3261            816.8151       825.1428    311690.3458         2.5224         2.5410
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 465000
+WRITING COORDINATES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 465000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4035.94
+LDB: ============== END OF LOAD BALANCING =============== 4035.94
+LDB: =============== DONE WITH MIGRATION ================ 4035.94
+LDB: ============= START OF LOAD BALANCING ============== 4036.79
+LDB: ============== END OF LOAD BALANCING =============== 4036.79
+LDB: =============== DONE WITH MIGRATION ================ 4036.79
+TIMING: 470000  CPU: 4032.81, 0.00857365/step  Wall: 4044.31, 0.00859518/step, 0.0716265 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 470000  averaging 20.0817 ns/day, 0.00860483 sec/step with standard deviation 8.1744e-05
+ENERGY:  470000      1717.9194      9869.9596      6232.9703        66.9087         -72583.6025       174.6531         0.0000         0.0000     21893.3761         -32627.8153       310.5112    -54521.1914    -32456.2407       310.1244            207.0707       193.5517    312683.9571         1.6537         1.6344
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 470000
+WRITING COORDINATES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 470000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4070.46
+LDB: ============== END OF LOAD BALANCING =============== 4070.46
+LDB: =============== DONE WITH MIGRATION ================ 4070.46
+LDB: ============= START OF LOAD BALANCING ============== 4071.32
+LDB: ============== END OF LOAD BALANCING =============== 4071.32
+LDB: =============== DONE WITH MIGRATION ================ 4071.32
+TIMING: 475000  CPU: 4075.64, 0.00856728/step  Wall: 4087.25, 0.0085884/step, 0.0596417 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 475000  averaging 20.0821 ns/day, 0.00860466 sec/step with standard deviation 8.13255e-05
+ENERGY:  475000      1733.2211      9874.0335      6272.3831        62.5875         -72858.5754       298.5986         0.0000         0.0000     21842.5440         -32775.2076       309.7903    -54617.7516    -32608.1267       309.6570            -75.7196       -71.5294    311415.7969         2.3581         2.2977
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 475000
+WRITING COORDINATES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 475000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4104.71
+LDB: ============== END OF LOAD BALANCING =============== 4104.71
+LDB: =============== DONE WITH MIGRATION ================ 4104.71
+LDB: ============= START OF LOAD BALANCING ============== 4105.57
+LDB: ============== END OF LOAD BALANCING =============== 4105.57
+LDB: =============== DONE WITH MIGRATION ================ 4105.57
+TIMING: 480000  CPU: 4118.59, 0.00858935/step  Wall: 4130.31, 0.00861047/step, 0.0478359 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 480000  averaging 20.082 ns/day, 0.00860472 sec/step with standard deviation 8.08985e-05
+ENERGY:  480000      1727.6418      9675.4316      6255.4523        75.8096         -72946.7378       441.6915         0.0000         0.0000     21808.7272         -32961.9837       309.3106    -54770.7109    -32791.9192       308.7991            353.1199       348.6871    311759.7108         0.6498         0.6086
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 480000
+WRITING COORDINATES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 480000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4139.21
+LDB: ============== END OF LOAD BALANCING =============== 4139.21
+LDB: =============== DONE WITH MIGRATION ================ 4139.21
+LDB: ============= START OF LOAD BALANCING ============== 4140.07
+LDB: ============== END OF LOAD BALANCING =============== 4140.07
+LDB: =============== DONE WITH MIGRATION ================ 4140.07
+LDB: ============= START OF LOAD BALANCING ============== 4173.42
+LDB: ============== END OF LOAD BALANCING =============== 4173.42
+LDB: =============== DONE WITH MIGRATION ================ 4173.42
+LDB: ============= START OF LOAD BALANCING ============== 4174.28
+LDB: ============== END OF LOAD BALANCING =============== 4174.28
+LDB: =============== DONE WITH MIGRATION ================ 4174.28
+TIMING: 485000  CPU: 4161.26, 0.00853337/step  Wall: 4173.08, 0.00855444/step, 0.0356435 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 485000  averaging 20.0832 ns/day, 0.0086042 sec/step with standard deviation 8.06379e-05
+ENERGY:  485000      1811.8109      9725.2993      6299.1814        64.8914         -72843.1511       250.8039         0.0000         0.0000     21856.3863         -32834.7778       309.9866    -54691.1641    -32667.5822       307.9701           -145.3790      -139.6092    313288.2957         2.6812         2.7609
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 485000
+WRITING COORDINATES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 485000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4207.62
+LDB: ============== END OF LOAD BALANCING =============== 4207.62
+LDB: =============== DONE WITH MIGRATION ================ 4207.62
+LDB: ============= START OF LOAD BALANCING ============== 4208.47
+LDB: ============== END OF LOAD BALANCING =============== 4208.47
+LDB: =============== DONE WITH MIGRATION ================ 4208.47
+TIMING: 490000  CPU: 4203.89, 0.00852731/step  Wall: 4215.82, 0.00854816/step, 0.0237449 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 490000  averaging 20.0845 ns/day, 0.00860363 sec/step with standard deviation 8.04206e-05
+ENERGY:  490000      1724.7251      9845.9689      6273.8092        75.0080         -72827.6319       288.9798         0.0000         0.0000     21744.1614         -32874.9795       308.3949    -54619.1409    -32713.7084       308.5136            463.7978       463.7637    312959.5653         0.3210         0.3170
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 490000
+WRITING COORDINATES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 490000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4241.95
+LDB: ============== END OF LOAD BALANCING =============== 4241.95
+LDB: =============== DONE WITH MIGRATION ================ 4241.95
+LDB: ============= START OF LOAD BALANCING ============== 4242.82
+LDB: ============== END OF LOAD BALANCING =============== 4242.82
+LDB: =============== DONE WITH MIGRATION ================ 4242.82
+TIMING: 495000  CPU: 4247.11, 0.0086428/step  Wall: 4259.16, 0.00866892/step, 0.0120402 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 495000  averaging 20.083 ns/day, 0.00860429 sec/step with standard deviation 8.02779e-05
+ENERGY:  495000      1777.5590      9862.8195      6297.7782        72.2643         -73009.9250       413.4407         0.0000         0.0000     22007.4521         -32578.6111       312.1291    -54586.0631    -32410.6025       309.1584            137.8749       126.7248    312432.6290         3.0076         3.0061
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 495000
+WRITING COORDINATES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 495000
+FINISHED WRITING RESTART VELOCITIES
+LDB: ============= START OF LOAD BALANCING ============== 4276.8
+LDB: ============== END OF LOAD BALANCING =============== 4276.8
+LDB: =============== DONE WITH MIGRATION ================ 4276.8
+LDB: ============= START OF LOAD BALANCING ============== 4277.7
+LDB: ============== END OF LOAD BALANCING =============== 4277.7
+LDB: =============== DONE WITH MIGRATION ================ 4277.7
+TIMING: 500000  CPU: 4290.31, 0.00864084/step  Wall: 4302.5, 0.00866652/step, 0 hours remaining, 0.000000 MB of memory in use.
+PERFORMANCE: 500000  averaging 20.0816 ns/day, 0.00860491 sec/step with standard deviation 8.01135e-05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:  500000      1759.2604      9819.4878      6325.9583        71.3427         -73218.8542       441.9697         0.0000         0.0000     21699.2218         -33101.6134       307.7575    -54800.8352    -32940.7572       307.5532            534.7990       530.4393    311576.4813         2.5207         2.5109
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500000
+WRITING COORDINATES TO DCD FILE step7_production.dcd AT STEP 500000
+WRITING COORDINATES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART COORDINATES
+WRITING VELOCITIES TO RESTART FILE AT STEP 500000
+FINISHED WRITING RESTART VELOCITIES
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500000
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500000
+CLOSING COORDINATE DCD FILE step7_production.dcd
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500000
+====================================================
+
+WallClock: 4308.853027  CPUTime: 4296.646973  Memory: 0.000000 MB
+[Partition 0][Node 0] End of program

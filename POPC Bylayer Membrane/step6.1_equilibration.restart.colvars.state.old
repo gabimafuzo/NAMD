@@ -1,0 +1,30 @@
+configuration {
+  step       134900
+  dt 1.000000e+00
+  version 2024-06-04
+}
+
+colvar {
+  name popc_head_upper
+  x       22.048710929053
+}
+
+colvar {
+  name popc_head_lower
+  x       -22.18181362474
+}
+
+restraint {
+  configuration {
+    step 134900
+    name harmonic1
+  }
+}
+
+restraint {
+  configuration {
+    step 134900
+    name harmonic2
+  }
+}
+
