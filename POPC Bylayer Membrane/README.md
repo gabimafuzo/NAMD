@@ -21,19 +21,19 @@ This file involves the molecular dynamics (MD) simulation of a **POPC membrane**
 
 ### **1. Area per Lipid Fluctuation**:
 The area per lipid fluctuated during the short simulation run, indicating that the system had not yet reached equilibrium. Longer simulations will be required to obtain stable values for this property.
-<div align="center">
+<div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/areaperlipid.jpeg" alt="Area per Lipid Fluctuation" width="400px">
 </div>
 
 ### **2. Membrane Thickness**:
 Significant variations in the **membrane thickness** were observed, especially around the phosphorus atoms of the lipid heads. These fluctuations suggest that the system might need more time to stabilize.
-<div align="center">
+<div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/membrane_thickness.jpeg" alt="Membrane Thickness" width="400px">
 </div>
 
 ### **3. Density Profile**:
 The density profile at **Frame 1** showed a higher density of lipids, while by **Frame 30**, the membrane had expanded, resulting in lower peaks in the density profile. This suggests that the system was still adjusting to the conditions during the short simulation.
-<div align="center">
+<div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density1.jpeg" alt="Density Profile" width="400px">
 </div>
 <div align="center">
