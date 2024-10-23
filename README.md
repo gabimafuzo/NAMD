@@ -8,7 +8,7 @@
 ---
 
 ## **Key Components**:
-- **Molecular Dynamics Simulations**: Utilizing NAMD for performing simulations of various biological systems.
+- **Molecular Dynamics Simulations**: Utilizing NAMD for performing simulations.
   
 - **Visualization**: Using VMD to analyze and visualize simulation trajectories and molecular structures.
 
@@ -19,7 +19,7 @@
 ## **Methodology**:
 
 ### **1. System Preparation**:
-- Retrieve biological structures from the **Protein Data Bank** (PDB).
+- Retrieve protein structures from the Protein Data Bank (PDB) and lipid structures from Lipid Maps.
   
 - Prepare systems by solvation in appropriate solvents (e.g., water) and ion neutralization.
   
