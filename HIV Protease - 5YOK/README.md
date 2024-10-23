@@ -1,7 +1,7 @@
 # HIV-1 Protease Simulation (PDB ID: 5YOK)
 
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="margin-right: 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <div>
     <img src="https://github.com/gabimafuzo/NAMD/blob/eef890ad992f9ba255e50af4400bad1947774a50/HIV%20Protease%20-%205YOK/proteinacomp.gif" alt="HIV Protease Simulation GIF" width="400px">
   </div>
   <div>
