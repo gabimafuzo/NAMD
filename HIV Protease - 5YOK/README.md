@@ -32,6 +32,10 @@ This repository contains the molecular dynamics (MD) simulation of the **HIV-1 p
 - **VMD** was used for visualizing the MD trajectory and generating movies and images.
 - Analysis included **RMSD**, bond analysis, and temperature monitoring.
 
+<div align="center">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/987a7b9b28c0516edb13f9d7413b9b50bf659157/HIV%20Protease%20-%205YOK/doc/prot_img.jpg" alt="HIV Protease Simulation " width="350px">
+</div>
+
 ---
 
 ## **Results**:
