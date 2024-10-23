@@ -1,11 +1,11 @@
 # POPC Membrane Simulation
 
-This project involves the molecular dynamics (MD) simulation of a **POPC membrane** (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), a common phosphatidylcholine used in membrane studies.
+This file involves the molecular dynamics (MD) simulation of a **POPC membrane** (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), a common phosphatidylcholine used in membrane studies.
 
 ## **Methodology**
 
 ### **System Preparation**:
-- The membrane system was built using **CHARMM-GUI** to ensure proper lipid arrangement and system setup.
+- The membrane system was built using **CHARMM-GUI**.
 - The system was solvated with a **water box**, and neutralized with **NaCl ions** for stability.
 - Input files required for the simulation, including topology and parameter files, were generated using **CHARMM-GUI**.
 
@@ -15,7 +15,7 @@ This project involves the molecular dynamics (MD) simulation of a **POPC membran
 
 ### **Visualization**:
 - The simulation trajectories were analyzed using **VMD (Visual Molecular Dynamics)**.
-- Key metrics such as **area per lipid**, **membrane thickness**, and **deformation** were extracted for interpretation.
+- Key metrics such as **area per lipid**, **membrane thickness**, and **deformation** were extracted.
 
 ## **Results**:
 
