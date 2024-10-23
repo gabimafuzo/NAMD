@@ -1,10 +1,10 @@
 # HIV-1 Protease Simulation (PDB ID: 5YOK)
 
-<div align="center">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/eef890ad992f9ba255e50af4400bad1947774a50/HIV%20Protease%20-%205YOK/proteinacomp.gif" alt="HIV Protease Simulation GIF" width="600px">
+<div align="left">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/eef890ad992f9ba255e50af4400bad1947774a50/HIV%20Protease%20-%205YOK/proteinacomp.gif" alt="HIV Protease Simulation GIF" width="350px">
 </div
-<div align="center">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/987a7b9b28c0516edb13f9d7413b9b50bf659157/HIV%20Protease%20-%205YOK/doc/prot_img.jpg" alt="HIV Protease Simulation " width="600px">
+<div align="right">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/987a7b9b28c0516edb13f9d7413b9b50bf659157/HIV%20Protease%20-%205YOK/doc/prot_img.jpg" alt="HIV Protease Simulation " width="350px">
 </div>
 
 This repository contains the molecular dynamics (MD) simulation of the **HIV-1 protease** (PDB ID: 5YOK). The project focuses on studying the structural behavior of the HIV-1 protease in a **water solvent with NaCl ions**.
