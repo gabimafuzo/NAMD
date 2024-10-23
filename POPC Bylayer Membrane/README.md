@@ -36,7 +36,7 @@ The density profile at **Frame 1** showed a higher density of lipids, while by *
 <div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density1.jpeg" alt="Density Profile" width="400px">
 </div>
-<div align="center">
+<div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density30.jpeg" alt="Density Profile" width="400px">
 </div>
 
