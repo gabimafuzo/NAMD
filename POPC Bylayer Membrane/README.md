@@ -40,6 +40,9 @@ The density profile at **Frame 1** showed a higher density of lipids, while by *
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density30.jpeg" alt="Density Profile" width="400px">
 </div>
 
+Density Profile Tool**:
+> Giorgino T. Computing 1-D atomic densities in macromolecular simulations: The density profile tool for VMD. *Computer Physics Communications*. 2014 Jan;185(1):317–22. Available from [doi:10.1016/j.cpc.2013.08.022](https://doi.org/10.1016/j.cpc.2013.08.022) or preprint at [arXiv:1308.5873](https://arxiv.org/abs/1308.5873).
+
 
 ## **Conclusion**:
 The POPC membrane simulation provided valuable preliminary insights into the structural dynamics of the lipid bilayer. However, due to the short duration of the production run, more extended simulations are necessary to achieve equilibrium and gather conclusive data. Future studies will focus on longer simulations to stabilize the membrane's structural properties.
