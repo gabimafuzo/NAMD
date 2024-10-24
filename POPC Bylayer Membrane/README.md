@@ -32,16 +32,16 @@ The area per lipid fluctuated during the short simulation run.
 ### **2. Membrane Thickness**:
 Significant variations in the **membrane thickness** were observed.
 <div align="left">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/membrane_thickness.jpeg" alt="Membrane Thickness" width="400px">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/membrane_thickness.jpeg" alt="Membrane Thickness" width="500px">
 </div>
 
 ### **3. Density Profile**:
 The density profile at **Frame 1** showed a higher density of lipids, while by **Frame 30**, the membrane had expanded, resulting in lower peaks in the density profile.
 <div align="left">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density1.jpeg" alt="Density Profile" width="400px">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density1.jpeg" alt="Density Profile" width="500px">
 </div>
 <div align="left">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density30.jpeg" alt="Density Profile" width="400px">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density30.jpeg" alt="Density Profile" width="500px">
 </div>
 
 **Density Profile Tool**:
