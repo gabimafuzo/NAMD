@@ -1,4 +1,4 @@
-## **Molecular Dynamics Simulations of Biological Molecules 🧬💻**
+# **Molecular Dynamics Simulations of Biological Molecules 🧬💻**
 
 <div align="center">
   <img src="https://github.com/gabimafuzo/NAMD/blob/eef890ad992f9ba255e50af4400bad1947774a50/HIV%20Protease%20-%205YOK/proteinacomp.gif" alt="Molecular Dynamics Simulation GIF" width="600px">
