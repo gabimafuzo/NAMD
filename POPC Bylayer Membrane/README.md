@@ -26,7 +26,7 @@ This file involves the molecular dynamics (MD) simulation of a **POPC membrane**
 ### **1. Area per Lipid Fluctuation**:
 The area per lipid fluctuated during the short simulation run.
 <div align="left">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/areaperlipid.jpeg" alt="Area per Lipid Fluctuation" width="400px">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/areaperlipid.jpeg" alt="Area per Lipid Fluctuation" width="500px">
 </div>
 
 ### **2. Membrane Thickness**:
