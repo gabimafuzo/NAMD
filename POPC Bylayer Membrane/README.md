@@ -1,7 +1,7 @@
 # POPC Membrane Simulation
 
 <div align="center">
-  <img src="https://github.com/gabimafuzo/NAMD/blob/b74f1cbb4890a90a362b7a3e270c564d03333ca8/POPC%20Bylayer%20Membrane/doc/memb.gif" alt="Membrane GIF" width="600px">
+  <img src="https://github.com/gabimafuzo/NAMD/blob/b74f1cbb4890a90a362b7a3e270c564d03333ca8/POPC%20Bylayer%20Membrane/doc/memb.gif" alt="Membrane GIF" width="550px">
 </div
 
 This file involves the molecular dynamics (MD) simulation of a **POPC membrane** (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine), a common phosphatidylcholine used in membrane studies.
