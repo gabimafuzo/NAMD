@@ -36,7 +36,7 @@ Significant variations in the **membrane thickness** were observed.
 </div>
 
 ### **3. Density Profile**:
-The density profile at **Frame 1** showed a higher density of lipids, while by **Frame 30**, the membrane had expanded, resulting in lower peaks in the density profile. This suggests that the system was still adjusting to the conditions during the short simulation.
+The density profile at **Frame 1** showed a higher density of lipids, while by **Frame 30**, the membrane had expanded, resulting in lower peaks in the density profile.
 <div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b06a0c95c696e6de63cfd1dfebd188401fb0f771/POPC%20Bylayer%20Membrane/doc/density1.jpeg" alt="Density Profile" width="400px">
 </div>
