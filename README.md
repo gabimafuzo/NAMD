@@ -31,7 +31,7 @@
 - Perform analyses such as RMSD, hydrogen bonds, and other relevant measurements.
 
 ### **3. Visualization**:
-- Use **VMD** to visualize MD trajectories, generate images, and create movies to present findings.
+- Use **VMD** to visualize MD trajectories, generate images, and create movies.
 
 ---
 
