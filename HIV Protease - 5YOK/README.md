@@ -41,7 +41,7 @@ This file contains the molecular dynamics (MD) simulation of the **HIV-1 proteas
 ## **Results**:
 
 ### **1. RMSD Backbone Analysis**
-The following plot represents the **RMSD** (Root Mean Square Deviation) of the backbone atoms, indicating structural stability over time:
+The following plot represents the **RMSD** (Root Mean Square Deviation) of the backbone atoms:
 
 <div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/rmsdvsframe.jpeg" alt="RMSD Backbone Analysis" width="500px">
@@ -50,7 +50,6 @@ The following plot represents the **RMSD** (Root Mean Square Deviation) of the b
 ---
 
 ### **2. Bond vs Time Step (TS) Analysis**
-This graph shows the evolution of critical **bonds** over time steps (**TS**), reflecting the structural integrity of the protease:
 
 <div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/bondvsts.jpeg" alt="Bond vs Time Step (TS) Analysis" width="500px">
@@ -59,7 +58,6 @@ This graph shows the evolution of critical **bonds** over time steps (**TS**), r
 ---
 
 ### **3. Temperature and Energy Monitoring (TEM & TEMAVG vs TS)**
-The following plot shows **temperature** and **energy** trends during the simulation. Stable temperature and energy profiles indicate a well-equilibrated system:
 
 <div align="left">
   <img src="https://github.com/gabimafuzo/NAMD/blob/b668d687668c926dec2971f26645039c4ca231fc/HIV%20Protease%20-%205YOK/tempvsts.jpeg" alt="Temperature and Energy Monitoring" width="500px">
