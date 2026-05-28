@@ -48,4 +48,4 @@ The density profile at **Frame 1** showed a higher density of lipids, while by *
 
 
 ## **Conclusion**:
-The POPC membrane simulation provided valuable preliminary insights into the structural dynamics of the lipid bilayer. However, due to the short duration of the production run, more extended simulations are necessary to achieve equilibrium and gather conclusive data. Future studies will focus on longer simulations to stabilize the membrane's structural properties.
+The POPC membrane simulation provided preliminary insights into the structural dynamics of the lipid bilayer. However, due to the short duration of the production run, more extended simulations are necessary to achieve equilibrium and gather conclusive data. Future studies will focus on longer simulations to stabilize the membrane's structural properties.
